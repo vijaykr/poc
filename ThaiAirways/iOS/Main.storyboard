@@ -19,29 +19,29 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="top_nav" translatesAutoresizingMaskIntoConstraints="NO" id="3" misplaced="YES">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="top_nav" translatesAutoresizingMaskIntoConstraints="NO" id="3">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="1Pv-yk-aPS"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mid_nav" translatesAutoresizingMaskIntoConstraints="NO" id="Ut4-n7-EuL" misplaced="YES">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mid_nav" translatesAutoresizingMaskIntoConstraints="NO" id="Ut4-n7-EuL">
                                 <rect key="frame" x="0.0" y="80" width="375" height="350"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="350" id="WWm-M0-EXT"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kAd-th-qsV" misplaced="YES">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kAd-th-qsV">
                                 <rect key="frame" x="0.0" y="603" width="375" height="4"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="4" id="kE8-4c-ZQf"/>
                                 </constraints>
                                 <variation key="heightClass=regular-widthClass=compact" image="nav_line"/>
                             </imageView>
-                            <tabBar contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="18">
+                            <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="18">
                                 <rect key="frame" x="0.0" y="607" width="375" height="60"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -63,7 +63,7 @@
                                 </items>
                                 <color key="selectedImageTintColor" red="0.50699764489999999" green="0.1057562307" blue="0.492108345" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </tabBar>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gc7-S8-4ky" misplaced="YES">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gc7-S8-4ky">
                                 <rect key="frame" x="11" y="450" width="170" height="128"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="promotion" translatesAutoresizingMaskIntoConstraints="NO" id="ERO-SP-ONv">
@@ -106,7 +106,7 @@
                                     <constraint firstItem="b6i-ht-siS" firstAttribute="leading" secondItem="Gc7-S8-4ky" secondAttribute="leading" id="xKn-5E-Mj9"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S2v-Ey-8bi" misplaced="YES">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S2v-Ey-8bi">
                                 <rect key="frame" x="195" y="450" width="170" height="128"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="promotion" translatesAutoresizingMaskIntoConstraints="NO" id="nOm-ic-cCD">
@@ -199,6 +199,23 @@
             </objects>
             <point key="canvasLocation" x="-0.8" y="-0.4497751"/>
         </scene>
+        <scene sceneID="44">
+            <objects>
+                <viewController id="45" sceneMemberID="viewController" customClass="BookFlightViewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="42"/>
+                        <viewControllerLayoutGuide type="bottom" id="43"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="46">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="47" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="552" y="-4"/>
+        </scene>
     </scenes>
     <resources>
         <image name="book_flight" width="57" height="35"/>
@@ -212,6 +229,16 @@
         <image name="welcome" width="274" height="73"/>
         <image name="landing" width="375" height="667"/>
         <image name="placeholder" width="510" height="255"/>
+        <image name="cabin_class_placeholder" width="345" height="24"/>
+        <image name="passenger_placeholder" width="92" height="29"/>
+        <image name="date_placeholder" width="152" height="42"/>
+        <image name="plane" width="68" height="17"/>
+        <image name="round_trip" width="162" height="31"/>
+        <image name="clock" width="22" height="22"/>
+        <image name="back" width="40" height="40"/>
+        <image name="cross" width="17" height="17"/>
+        <image name="time_back" width="109" height="8"/>
+        <image name="flight_list_top_bar" width="375" height="178"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedScreenMetrics key="destination" type="retina47"/>
