@@ -1,10 +1,9 @@
 ﻿<Properties StartupConfiguration="{D0281075-69D6-4611-8B9E-7624C4FC6830}|Default">
   <MonoDevelop.Ide.ItemProperties.ThaiAirways.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.7F9C0FAA-A312-4032-964A-83F8F219F22D" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="ThaiAirways/Utils/CrossPlatformUtils.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="iOS/Main.storyboard">
     <Files>
       <File FileName="iOS/ViewController.cs" Line="51" Column="61" />
       <File FileName="iOS/Main.storyboard" />
-      <File FileName="ThaiAirways/Utils/CrossPlatformUtils.cs" Line="17" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

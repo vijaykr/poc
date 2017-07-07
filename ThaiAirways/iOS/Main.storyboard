@@ -213,4 +213,7 @@
         <image name="landing" width="375" height="667"/>
         <image name="placeholder" width="510" height="255"/>
     </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedScreenMetrics key="destination" type="retina47"/>
+    </simulatedMetricsContainer>
 </document>

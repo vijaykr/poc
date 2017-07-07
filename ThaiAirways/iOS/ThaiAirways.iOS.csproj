@@ -148,6 +148,46 @@
     <ImageAsset Include="Assets.xcassets\welcome.imageset\welcome.png" />
     <ImageAsset Include="Assets.xcassets\welcome.imageset\welcome%402x.png" />
     <ImageAsset Include="Assets.xcassets\welcome.imageset\welcome%403x.png" />
+    <ImageAsset Include="Assets.xcassets\cabin_class_placeholder.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\cabin_class_placeholder.imageset\cabin_class_placeholder.png" />
+    <ImageAsset Include="Assets.xcassets\cabin_class_placeholder.imageset\cabin_class_placeholder%402x.png" />
+    <ImageAsset Include="Assets.xcassets\cabin_class_placeholder.imageset\cabin_class_placeholder%403x.png" />
+    <ImageAsset Include="Assets.xcassets\passenger_placeholder.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\passenger_placeholder.imageset\passenger_placeholder.png" />
+    <ImageAsset Include="Assets.xcassets\passenger_placeholder.imageset\passenger_placeholder%402x.png" />
+    <ImageAsset Include="Assets.xcassets\passenger_placeholder.imageset\passenger_placeholder%403x.png" />
+    <ImageAsset Include="Assets.xcassets\date_placeholder.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\date_placeholder.imageset\date_placeholder.png" />
+    <ImageAsset Include="Assets.xcassets\date_placeholder.imageset\date_placeholder%402x.png" />
+    <ImageAsset Include="Assets.xcassets\date_placeholder.imageset\date_placeholder%403x.png" />
+    <ImageAsset Include="Assets.xcassets\plane.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\plane.imageset\plane.png" />
+    <ImageAsset Include="Assets.xcassets\plane.imageset\plane%402x.png" />
+    <ImageAsset Include="Assets.xcassets\plane.imageset\plane%403x.png" />
+    <ImageAsset Include="Assets.xcassets\round_trip.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\round_trip.imageset\round_trip.png" />
+    <ImageAsset Include="Assets.xcassets\round_trip.imageset\round_trip%402x.png" />
+    <ImageAsset Include="Assets.xcassets\round_trip.imageset\round_trip%403x.png" />
+    <ImageAsset Include="Assets.xcassets\clock.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\clock.imageset\clock.png" />
+    <ImageAsset Include="Assets.xcassets\clock.imageset\clock%402x.png" />
+    <ImageAsset Include="Assets.xcassets\clock.imageset\clock%403x.png" />
+    <ImageAsset Include="Assets.xcassets\back.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\back.imageset\back.png" />
+    <ImageAsset Include="Assets.xcassets\back.imageset\back%402x.png" />
+    <ImageAsset Include="Assets.xcassets\back.imageset\back%403x.png" />
+    <ImageAsset Include="Assets.xcassets\cross.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\cross.imageset\cross.png" />
+    <ImageAsset Include="Assets.xcassets\cross.imageset\cross%402x.png" />
+    <ImageAsset Include="Assets.xcassets\cross.imageset\cross%403x.png" />
+    <ImageAsset Include="Assets.xcassets\time_back.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\time_back.imageset\time_back.png" />
+    <ImageAsset Include="Assets.xcassets\time_back.imageset\time_back%402x.png" />
+    <ImageAsset Include="Assets.xcassets\time_back.imageset\time_back%403x.png" />
+    <ImageAsset Include="Assets.xcassets\flight_list_top_bar.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\flight_list_top_bar.imageset\flight_list_top_bar.png" />
+    <ImageAsset Include="Assets.xcassets\flight_list_top_bar.imageset\flight_list_top_bar%402x.png" />
+    <ImageAsset Include="Assets.xcassets\flight_list_top_bar.imageset\flight_list_top_bar%403x.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
@@ -162,6 +202,16 @@
     <Folder Include="Assets.xcassets\landing.imageset\" />
     <Folder Include="Assets.xcassets\placeholder.imageset\" />
     <Folder Include="Assets.xcassets\welcome.imageset\" />
+    <Folder Include="Assets.xcassets\cabin_class_placeholder.imageset\" />
+    <Folder Include="Assets.xcassets\passenger_placeholder.imageset\" />
+    <Folder Include="Assets.xcassets\date_placeholder.imageset\" />
+    <Folder Include="Assets.xcassets\plane.imageset\" />
+    <Folder Include="Assets.xcassets\round_trip.imageset\" />
+    <Folder Include="Assets.xcassets\clock.imageset\" />
+    <Folder Include="Assets.xcassets\back.imageset\" />
+    <Folder Include="Assets.xcassets\cross.imageset\" />
+    <Folder Include="Assets.xcassets\time_back.imageset\" />
+    <Folder Include="Assets.xcassets\flight_list_top_bar.imageset\" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
