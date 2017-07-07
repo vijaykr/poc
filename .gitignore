@@ -1,0 +1,9 @@
+.vs/
+packages/
+.DS_Store
+gen/
+out/
+bin/
+obj/
+GiantEagle/GiantEagle.userprefs
+GiantEagle/Droid/Resources/Resource.designer.cs

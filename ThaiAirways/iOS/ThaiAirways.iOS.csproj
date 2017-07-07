@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProjectGuid>{D0281075-69D6-4611-8B9E-7624C4FC6830}</ProjectGuid>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>ThaiAirways.iOS</RootNamespace>
+    <AssemblyName>ThaiAirways.iOS</AssemblyName>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG;ENABLE_TEST_CLOUD;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <DeviceSpecificBuild>true</DeviceSpecificBuild>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
+    <MtouchFastDev>true</MtouchFastDev>
+    <IOSDebuggerPort>40188</IOSDebuggerPort>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>i386, x86_64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <PlatformTarget>x86</PlatformTarget>
+    <MtouchSdkVersion>10.3</MtouchSdkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchFloat32>true</MtouchFloat32>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <DeviceSpecificBuild>true</DeviceSpecificBuild>
+    <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>i386, x86_64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG;ENABLE_TEST_CLOUD;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <DeviceSpecificBuild>true</DeviceSpecificBuild>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
+    <MtouchFastDev>true</MtouchFastDev>
+    <MtouchFloat32>true</MtouchFloat32>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <IOSDebuggerPort>59747</IOSDebuggerPort>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+    <Reference Include="RestSharp">
+      <HintPath>..\packages\RestSharp.105.2.3\lib\Xamarin.iOS10\RestSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Extensions">
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.29\lib\Xamarin.iOS10\System.Net.Http.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Primitives">
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.29\lib\Xamarin.iOS10\System.Net.Http.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="SDWebImage">
+      <HintPath>..\packages\Xamarin.SDWebImage.3.7.5\lib\Xamarin.iOS\SDWebImage.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ThaiAirways\ThaiAirways.csproj">
+      <Project>{97870F59-9DD9-486A-A4FA-C1D8CD200221}</Project>
+      <Name>ThaiAirways</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\top_nav.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\top_nav.imageset\top_nav.png" />
+    <ImageAsset Include="Assets.xcassets\top_nav.imageset\top_nav%402x.png" />
+    <ImageAsset Include="Assets.xcassets\top_nav.imageset\top_nav%403x.png" />
+    <ImageAsset Include="Assets.xcassets\mid_nav.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\mid_nav.imageset\mid_nav.png" />
+    <ImageAsset Include="Assets.xcassets\mid_nav.imageset\mid_nav%402x.png" />
+    <ImageAsset Include="Assets.xcassets\mid_nav.imageset\mid_nav%403x.png" />
+    <ImageAsset Include="Assets.xcassets\book_flight.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\book_flight.imageset\book_flight.png" />
+    <ImageAsset Include="Assets.xcassets\book_flight.imageset\book_flight%402x.png" />
+    <ImageAsset Include="Assets.xcassets\book_flight.imageset\book_flight%403x.png" />
+    <ImageAsset Include="Assets.xcassets\flight_status.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\flight_status.imageset\flight_status.png" />
+    <ImageAsset Include="Assets.xcassets\flight_status.imageset\flight_status%402x.png" />
+    <ImageAsset Include="Assets.xcassets\flight_status.imageset\flight_status%403x.png" />
+    <ImageAsset Include="Assets.xcassets\my_booking.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\my_booking.imageset\my_booking.png" />
+    <ImageAsset Include="Assets.xcassets\my_booking.imageset\my_booking%402x.png" />
+    <ImageAsset Include="Assets.xcassets\my_booking.imageset\my_booking%403x.png" />
+    <ImageAsset Include="Assets.xcassets\timetable.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\timetable.imageset\timetable.png" />
+    <ImageAsset Include="Assets.xcassets\timetable.imageset\timetable%402x.png" />
+    <ImageAsset Include="Assets.xcassets\timetable.imageset\timetable%403x.png" />
+    <ImageAsset Include="Assets.xcassets\nav_line.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\nav_line.imageset\nav_line.png" />
+    <ImageAsset Include="Assets.xcassets\nav_line.imageset\nav_line%402x.png" />
+    <ImageAsset Include="Assets.xcassets\nav_line.imageset\nav_line%403x.png" />
+    <ImageAsset Include="Assets.xcassets\promotion.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\promotion.imageset\promotion.png" />
+    <ImageAsset Include="Assets.xcassets\promotion.imageset\promotion%402x.png" />
+    <ImageAsset Include="Assets.xcassets\promotion.imageset\promotion%403x.png" />
+    <ImageAsset Include="Assets.xcassets\landing.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\landing.imageset\landing.png" />
+    <ImageAsset Include="Assets.xcassets\landing.imageset\landing%402x.png" />
+    <ImageAsset Include="Assets.xcassets\landing.imageset\landing%403x.png" />
+    <ImageAsset Include="Assets.xcassets\placeholder.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\placeholder.imageset\placeholder.png" />
+    <ImageAsset Include="Assets.xcassets\welcome.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\welcome.imageset\welcome.png" />
+    <ImageAsset Include="Assets.xcassets\welcome.imageset\welcome%402x.png" />
+    <ImageAsset Include="Assets.xcassets\welcome.imageset\welcome%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+    <Folder Include="Assets.xcassets\top_nav.imageset\" />
+    <Folder Include="Assets.xcassets\mid_nav.imageset\" />
+    <Folder Include="Assets.xcassets\book_flight.imageset\" />
+    <Folder Include="Assets.xcassets\flight_status.imageset\" />
+    <Folder Include="Assets.xcassets\my_booking.imageset\" />
+    <Folder Include="Assets.xcassets\timetable.imageset\" />
+    <Folder Include="Assets.xcassets\nav_line.imageset\" />
+    <Folder Include="Assets.xcassets\promotion.imageset\" />
+    <Folder Include="Assets.xcassets\landing.imageset\" />
+    <Folder Include="Assets.xcassets\placeholder.imageset\" />
+    <Folder Include="Assets.xcassets\welcome.imageset\" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="LaunchScreen.storyboard" />
+    <InterfaceDefinition Include="Main.storyboard" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Info.plist" />
+    <None Include="Entitlements.plist" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="ViewController.cs" />
+    <Compile Include="ViewController.designer.cs">
+      <DependentUpon>ViewController.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+  <Import Project="..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" />
+</Project>

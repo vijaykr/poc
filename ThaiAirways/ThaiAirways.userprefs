@@ -1,0 +1,22 @@
+﻿<Properties StartupConfiguration="{D0281075-69D6-4611-8B9E-7624C4FC6830}|Default">
+  <MonoDevelop.Ide.ItemProperties.ThaiAirways.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.7F9C0FAA-A312-4032-964A-83F8F219F22D" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="ThaiAirways/Utils/CrossPlatformUtils.cs">
+    <Files>
+      <File FileName="iOS/ViewController.cs" Line="51" Column="61" />
+      <File FileName="iOS/Main.storyboard" />
+      <File FileName="ThaiAirways/Utils/CrossPlatformUtils.cs" Line="17" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches>
+    <Watch file="../../gefuelperksplus/GiantEagle/iOS/ViewController/SignIn/EnrSignInDefaultViewController.cs" line="134" offsetX="481" offsetY="1995" expression="this.PasswordErrorMsgLabel.Hidden" liveUpdate="False" />
+    <Watch file="../../gefuelperksplus/GiantEagle/GiantEagle/Helpers/Settings.cs" line="18" offsetX="358" offsetY="272" expression="CrossSettings.Current" liveUpdate="False" />
+    <Watch file="../../gefuelperksplus/GiantEagle/Droid/Activity/SignInActivity.cs" line="47" offsetX="436" offsetY="690" expression="EnrSignDefaultVm.User" liveUpdate="False" />
+    <Watch file="../../gefuelperksplus/GiantEagle/GiantEagle/Utils/CrossPlatformHelperMethods.cs" line="271" offsetX="740" offsetY="4050" expression="property" liveUpdate="False" />
+    <Watch file="ThaiAirways/Model/ContentModel.cs" line="34" offsetX="429" offsetY="495" expression="response" liveUpdate="False" />
+  </MonoDevelop.Ide.DebuggingService.PinnedWatches>
+  <MultiItemStartupConfigurations />
+</Properties>
