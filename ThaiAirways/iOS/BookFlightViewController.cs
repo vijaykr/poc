@@ -1,6 +1,9 @@
 using Foundation;
 using System;
 using UIKit;
+using ThaiAirways.Model;
+using ThaiAirways.Model.Vo;
+using BigTed;
 
 namespace ThaiAirways.iOS
 {
@@ -29,10 +32,25 @@ namespace ThaiAirways.iOS
 
 		void BookFlightButton_TouchUpInside(object sender, EventArgs e)
 		{
-			var storyboard = UIStoryboard.FromName("Main", null);
-			FlightListViewController flightListViewController = storyboard.InstantiateViewController("FlightListViewController")
-							 as FlightListViewController;
-			NavigationController.PushViewController(flightListViewController, true);
+            BTProgressHUD.ForceiOS6LookAndFeel = true;
+			BTProgressHUD.Show("Loading...");
+
+            InvokeInBackground(() =>
+            {
+	            FlighSearchModel.Instance.GetFlightDetails(1, 0, 0, "ECONOMY", "2017-07-09", "BKK", 0, "", "HKG", "en-US", "USD");
+
+	            InvokeOnMainThread(() =>
+		        {
+					var storyboard = UIStoryboard.FromName("Main", null);
+					FlightListViewController flightListViewController = storyboard.InstantiateViewController("FlightListViewController")
+									 as FlightListViewController;
+					NavigationController.PushViewController(flightListViewController, true);
+
+					BTProgressHUD.Dismiss();
+			    });
+
+			});
+			
 		}
 
 		void BackButton_TouchUpInside(object sender, EventArgs e)

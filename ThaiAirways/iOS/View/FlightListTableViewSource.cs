@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using ThaiAirways.Model.Vo;
 using UIKit;
 
 namespace ThaiAirways.iOS.View
@@ -6,14 +8,15 @@ namespace ThaiAirways.iOS.View
     public class FlightListTableViewSource : UITableViewSource
     {
 
-		//private List<EcouponsCategory> eCouponsList;
+		private List<FlightSearchEntity> flightList;
 		int itemSection = 1;
 		int itemCount = 3;
 
 		public static readonly int ViewHeight = 350;
 
-		public FlightListTableViewSource()
+		public FlightListTableViewSource(List<FlightSearchEntity> flightList)
         {
+            this.flightList = flightList;
         }
 
 		#region Override methods
@@ -36,7 +39,7 @@ namespace ThaiAirways.iOS.View
 		/// <param name="section">Section.</param>
 		public override nint RowsInSection(UITableView tableview, nint section)
 		{
-			return itemCount;
+            return flightList.Count;
 		}
 
         /// <summary>
@@ -48,6 +51,7 @@ namespace ThaiAirways.iOS.View
         public override UITableViewCell GetCell(UITableView tableView, Foundation.NSIndexPath indexPath)
         {
             FlightCardViewCell detailsCell = tableView.DequeueReusableCell("FlightCardViewCell", indexPath) as FlightCardViewCell;
+            detailsCell.initCell(flightList.ToArray()[indexPath.Row]);
 			return detailsCell;
 		}
 

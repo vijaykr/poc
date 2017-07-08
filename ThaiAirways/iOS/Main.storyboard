@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="gFK-zx-nwH">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
@@ -65,12 +65,13 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gc7-S8-4ky">
                                 <rect key="frame" x="11" y="450" width="170" height="128"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="promotion" translatesAutoresizingMaskIntoConstraints="NO" id="ERO-SP-ONv">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="promotion" translatesAutoresizingMaskIntoConstraints="NO" id="ERO-SP-ONv">
                                         <rect key="frame" x="0.0" y="0.0" width="170" height="85"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="85" id="DWz-xb-lXY"/>
                                             <constraint firstAttribute="width" constant="170" id="FAf-BJ-up6"/>
                                         </constraints>
+                                        <variation key="heightClass=regular-widthClass=compact" image="placeholder"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Promotions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b6i-ht-siS">
                                         <rect key="frame" x="0.0" y="90" width="93" height="21"/>
@@ -108,12 +109,13 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S2v-Ey-8bi">
                                 <rect key="frame" x="195" y="450" width="170" height="128"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="promotion" translatesAutoresizingMaskIntoConstraints="NO" id="nOm-ic-cCD">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="promotion" translatesAutoresizingMaskIntoConstraints="NO" id="nOm-ic-cCD">
                                         <rect key="frame" x="0.0" y="0.0" width="170" height="85"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="85" id="OSG-7j-wwo"/>
                                             <constraint firstAttribute="width" constant="170" id="gQG-zr-6BV"/>
                                         </constraints>
+                                        <variation key="heightClass=regular-widthClass=compact" image="placeholder"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Promotions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HX2-Ke-Msm">
                                         <rect key="frame" x="0.0" y="90" width="93" height="21"/>
@@ -198,7 +200,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="938.39999999999998" y="-0.44977509999999998"/>
+            <point key="canvasLocation" x="938.4" y="-0.4497751"/>
         </scene>
         <!--Book Flight View Controller-->
         <scene sceneID="44">
@@ -215,15 +217,17 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="global_top_bar" translatesAutoresizingMaskIntoConstraints="NO" id="76">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="98"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Book a trip" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="78">
-                                <rect key="frame" x="88" y="43" width="200" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Book a trip" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="78" fixedFrame="YES">
+                                <rect key="frame" x="88" y="46" width="200" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t5X-e2-wUg">
-                                <rect key="frame" x="9" y="35" width="40" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t5X-e2-wUg" fixedFrame="YES">
+                                <rect key="frame" x="5" y="40" width="40" height="40"/>
                                 <state key="normal" image="back"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="round_trip" translatesAutoresizingMaskIntoConstraints="NO" id="IuY-Fa-VAp">
                                 <rect key="frame" x="16" y="103" width="162" height="31"/>
@@ -335,7 +339,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GeX-Tc-13V">
                                 <rect key="frame" x="203" y="279" width="156" height="74"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Depart on" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vqX-yU-W8h">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Return on" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vqX-yU-W8h">
                                         <rect key="frame" x="4" y="0.0" width="149" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -370,7 +374,7 @@
                                         <rect key="frame" x="1" y="5" width="344" height="64"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bod-If-hma">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bod-If-hma">
                                         <rect key="frame" x="-2" y="28" width="20" height="31"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
@@ -400,7 +404,7 @@
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="87">
                                         <rect key="frame" x="0.0" y="16" width="345" height="56"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <variation key="heightClass=regular-widthClass=compact" image="cabin_class"/>
+                                        <variation key="heightClass=regular-widthClass=compact" image="cabin_class" fixedFrame="YES"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Premium Economy &amp; Economy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1vY-oO-KLQ">
                                         <rect key="frame" x="1" y="39" width="327" height="21"/>
@@ -441,25 +445,20 @@
                             <constraint firstItem="TKH-LM-kDC" firstAttribute="top" secondItem="GeX-Tc-13V" secondAttribute="bottom" constant="13" id="BNa-Ck-gJ2"/>
                             <constraint firstItem="GeX-Tc-13V" firstAttribute="top" secondItem="uJe-XT-abw" secondAttribute="bottom" constant="15" id="BOx-ae-pdC"/>
                             <constraint firstItem="76" firstAttribute="top" secondItem="46" secondAttribute="top" id="Cgr-5w-MWI"/>
-                            <constraint firstItem="t5X-e2-wUg" firstAttribute="top" secondItem="42" secondAttribute="bottom" constant="15" id="Esh-gc-DFQ"/>
                             <constraint firstItem="uJe-XT-abw" firstAttribute="leading" secondItem="46" secondAttribute="leadingMargin" id="FI0-A5-Oxs"/>
                             <constraint firstItem="uJe-XT-abw" firstAttribute="leading" secondItem="IuY-Fa-VAp" secondAttribute="leading" id="FRg-Xd-rSv"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="78" secondAttribute="trailing" constant="71" id="IOQ-af-Qgx"/>
                             <constraint firstItem="r45-cl-FBF" firstAttribute="leading" secondItem="46" secondAttribute="leading" constant="15" id="NuJ-LS-eVL"/>
                             <constraint firstItem="uJe-XT-abw" firstAttribute="centerX" secondItem="TKH-LM-kDC" secondAttribute="centerX" id="OfX-He-4Fj"/>
                             <constraint firstItem="uJe-XT-abw" firstAttribute="trailing" secondItem="84" secondAttribute="trailing" id="SFY-l1-yp5"/>
                             <constraint firstItem="43" firstAttribute="top" secondItem="84" secondAttribute="bottom" constant="138" id="V3o-bw-4wV"/>
-                            <constraint firstItem="uJe-XT-abw" firstAttribute="centerX" secondItem="78" secondAttribute="centerX" id="V6C-ix-p92"/>
                             <constraint firstItem="84" firstAttribute="top" secondItem="r45-cl-FBF" secondAttribute="bottom" constant="94" id="VG0-FI-Ao7"/>
                             <constraint firstItem="GeX-Tc-13V" firstAttribute="top" secondItem="r45-cl-FBF" secondAttribute="top" id="XfL-l1-UPO"/>
                             <constraint firstItem="TKH-LM-kDC" firstAttribute="top" secondItem="46" secondAttribute="top" constant="366" id="aBW-Cr-V8d"/>
                             <constraint firstItem="uJe-XT-abw" firstAttribute="top" secondItem="IuY-Fa-VAp" secondAttribute="bottom" constant="20" id="d52-UU-F4P"/>
-                            <constraint firstItem="78" firstAttribute="leading" secondItem="t5X-e2-wUg" secondAttribute="trailing" constant="27" id="dPl-nN-bz9"/>
                             <constraint firstItem="uJe-XT-abw" firstAttribute="top" secondItem="46" secondAttribute="top" constant="154" id="edT-kH-M53"/>
                             <constraint firstItem="43" firstAttribute="top" secondItem="TKH-LM-kDC" secondAttribute="bottom" constant="213" id="iAB-ye-rux"/>
                             <constraint firstItem="uJe-XT-abw" firstAttribute="centerX" secondItem="76" secondAttribute="centerX" id="iKe-ns-HiD"/>
                             <constraint firstItem="uJe-XT-abw" firstAttribute="trailing" secondItem="GeX-Tc-13V" secondAttribute="trailing" id="lEg-NI-aNf"/>
-                            <constraint firstItem="78" firstAttribute="top" secondItem="42" secondAttribute="bottom" constant="23" id="lWF-0n-kq4"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Pyi-8E-IYx" secondAttribute="trailing" id="tmn-yT-gpj"/>
                             <constraint firstItem="TKH-LM-kDC" firstAttribute="leading" secondItem="r45-cl-FBF" secondAttribute="leading" id="u8T-zG-sag"/>
                             <constraint firstItem="uJe-XT-abw" firstAttribute="leading" secondItem="84" secondAttribute="leading" id="v3O-c0-KAr"/>
@@ -480,11 +479,19 @@
                     <connections>
                         <outlet property="BackButton" destination="t5X-e2-wUg" id="name-outlet-t5X-e2-wUg"/>
                         <outlet property="BookFlightButton" destination="Pyi-8E-IYx" id="name-outlet-Pyi-8E-IYx"/>
+                        <outlet property="DepartDateLable" destination="S3j-UC-BS3" id="name-outlet-S3j-UC-BS3"/>
+                        <outlet property="ReturnDateLabel" destination="cfM-Y5-tyM" id="name-outlet-cfM-Y5-tyM"/>
+                        <outlet property="DepartMonthLabel" destination="ZJM-ee-FP4" id="name-outlet-ZJM-ee-FP4"/>
+                        <outlet property="ReturnMonthLabel" destination="XaE-Yl-Zwo" id="name-outlet-XaE-Yl-Zwo"/>
+                        <outlet property="AdultLabel" destination="bod-If-hma" id="name-outlet-bod-If-hma"/>
+                        <outlet property="ChildrenLabel" destination="yyI-Sm-CG8" id="name-outlet-yyI-Sm-CG8"/>
+                        <outlet property="InfantsLabel" destination="0JR-8t-dNo" id="name-outlet-0JR-8t-dNo"/>
+                        <outlet property="ClassLabel" destination="1vY-oO-KLQ" id="name-outlet-1vY-oO-KLQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="47" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1632.8" y="-0.44977509999999998"/>
+            <point key="canvasLocation" x="1632.8" y="-0.4497751"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="3cI-fF-4n1">
@@ -502,7 +509,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g44-tx-BPn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-0.80000000000000004" y="-0.44977509999999998"/>
+            <point key="canvasLocation" x="-0.8" y="-0.4497751"/>
         </scene>
         <!--Test View Controller-->
         <scene sceneID="95">
@@ -555,25 +562,27 @@
                                     <constraint firstAttribute="height" constant="178" id="mMJ-5j-E35"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bangkok to Hong Kong" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Loc-zv-a8A">
-                                <rect key="frame" x="103" y="43" width="185" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bangkok to Hong Kong" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Loc-zv-a8A" fixedFrame="YES">
+                                <rect key="frame" x="99" y="46" width="212" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xgl-jZ-PJO">
-                                <rect key="frame" x="9" y="35" width="40" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xgl-jZ-PJO" fixedFrame="YES">
+                                <rect key="frame" x="5" y="40" width="40" height="40"/>
                                 <state key="normal" image="back"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="113">
                                 <rect key="frame" x="16" y="130" width="162" height="23"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <variation key="heightClass=regular-widthClass=compact" image="depart"/>
+                                <variation key="heightClass=regular-widthClass=compact" image="depart" fixedFrame="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="116">
                                 <rect key="frame" x="196" y="130" width="162" height="23"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <variation key="heightClass=regular-widthClass=compact" image="depart"/>
+                                <variation key="heightClass=regular-widthClass=compact" image="depart" fixedFrame="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Depart" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="117">
                                 <rect key="frame" x="16" y="84" width="162" height="21"/>
@@ -596,7 +605,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Depart" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="119">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Return" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="119">
                                 <rect key="frame" x="197" y="84" width="162" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
@@ -614,7 +623,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="130">
                                 <rect key="frame" x="15" y="258" width="351" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <variation key="heightClass=regular-widthClass=compact" image="filter"/>
+                                <variation key="heightClass=regular-widthClass=compact" image="filter" fixedFrame="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3 Flights" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="138">
                                 <rect key="frame" x="19" y="320" width="112" height="21"/>
@@ -642,15 +651,11 @@
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="OQx-H8-8fG" secondAttribute="trailing" id="20b-9J-qaN"/>
                             <constraint firstItem="OQx-H8-8fG" firstAttribute="leading" secondItem="mdy-M9-v6h" secondAttribute="leading" id="CAc-ES-43L"/>
-                            <constraint firstItem="Loc-zv-a8A" firstAttribute="leading" secondItem="xgl-jZ-PJO" secondAttribute="trailing" constant="27" id="JPH-BJ-cgf"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Loc-zv-a8A" secondAttribute="trailing" constant="71" id="LyY-nN-ytd"/>
                             <constraint firstItem="gWi-CQ-mVp" firstAttribute="top" secondItem="140" secondAttribute="bottom" constant="2" id="ToO-1b-hpu"/>
                             <constraint firstItem="140" firstAttribute="top" secondItem="4RY-ap-Pan" secondAttribute="bottom" constant="338" id="XNE-g6-Iek"/>
                             <constraint firstItem="140" firstAttribute="leading" secondItem="mdy-M9-v6h" secondAttribute="leading" constant="12" id="ffF-Vo-gIR"/>
                             <constraint firstItem="OQx-H8-8fG" firstAttribute="top" secondItem="mdy-M9-v6h" secondAttribute="top" id="mvk-GD-1z3"/>
-                            <constraint firstItem="xgl-jZ-PJO" firstAttribute="top" secondItem="4RY-ap-Pan" secondAttribute="bottom" constant="15" id="tB3-5U-kp8"/>
                             <constraint firstAttribute="trailing" secondItem="140" secondAttribute="trailing" constant="12" id="ups-zj-bh3"/>
-                            <constraint firstItem="Loc-zv-a8A" firstAttribute="top" secondItem="4RY-ap-Pan" secondAttribute="bottom" constant="23" id="y8k-7J-QYa"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
@@ -687,6 +692,8 @@
                         <outlet property="BackButton" destination="xgl-jZ-PJO" id="name-outlet-xgl-jZ-PJO"/>
                         <outlet property="FlightListTableView" destination="140" id="name-outlet-140"/>
                         <outlet property="TotalFlightLabel" destination="138" id="name-outlet-138"/>
+                        <outlet property="DepartDateLabel" destination="118" id="name-outlet-118"/>
+                        <outlet property="ReturnDateLabel" destination="120" id="name-outlet-120"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eiz-ZV-YpV" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -714,5 +721,16 @@
         <image name="timetable" width="54" height="36"/>
         <image name="top_nav" width="375" height="88"/>
         <image name="welcome" width="274" height="73"/>
+        <image name="landing" width="375" height="667"/>
+        <image name="placeholder" width="510" height="255"/>
+        <image name="cabin_class_placeholder" width="345" height="24"/>
+        <image name="passenger_placeholder" width="92" height="29"/>
+        <image name="clock" width="22" height="22"/>
+        <image name="cross" width="17" height="17"/>
+        <image name="time_back" width="109" height="8"/>
+        <image name="flight_card" width="351" height="208"/>
     </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedScreenMetrics key="destination" type="retina47"/>
+    </simulatedMetricsContainer>
 </document>

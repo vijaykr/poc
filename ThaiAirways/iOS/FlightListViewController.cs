@@ -4,6 +4,7 @@ using System;
 
 using Foundation;
 using ThaiAirways.iOS.View;
+using ThaiAirways.Model;
 using UIKit;
 
 namespace ThaiAirways.iOS
@@ -23,7 +24,7 @@ namespace ThaiAirways.iOS
 
             FlightListTableView.RegisterNibForCellReuse(FlightCardViewCell.Nib, "FlightCardViewCell");
 
-            FlightListTableView.Source = new FlightListTableViewSource();
+            FlightListTableView.Source = new FlightListTableViewSource(FlighSearchModel.Instance.FlightList);
             FlightListTableView.ReloadData();
 
 		}
@@ -33,6 +34,8 @@ namespace ThaiAirways.iOS
 			base.ViewWillAppear(animated);
 
 			NavigationController.NavigationBar.Hidden = true;
+
+            TotalFlightLabel.Text = FlighSearchModel.Instance.FlightList.Count + " Flights";
 		}
 
 		void BackButton_TouchUpInside(object sender, EventArgs e)

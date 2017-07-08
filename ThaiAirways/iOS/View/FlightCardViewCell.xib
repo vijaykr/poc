@@ -43,23 +43,63 @@
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="21" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
                         <rect key="frame" x="269" y="81" width="69" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                        <nil key="textColor"/>
+                        <color key="textColor" colorSpace="calibratedRGB" red="0.75294117647058822" green="0" blue="0.53333333333333333" alpha="1"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="22" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
                         <rect key="frame" x="269" y="125" width="69" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                        <nil key="textColor"/>
+                        <color key="textColor" colorSpace="calibratedRGB" red="0.75294117647058822" green="0" blue="0.53333333333333333" alpha="1"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="23" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
                         <rect key="frame" x="270" y="169" width="69" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                        <nil key="textColor"/>
+                        <color key="textColor" colorSpace="calibratedRGB" red="0.75294117647058822" green="0" blue="0.53333333333333333" alpha="1"/>
                         <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2h 45m" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="26" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                        <rect key="frame" x="124" y="45" width="105" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" colorSpace="calibratedRGB" red="0.14509803921568629" green="0" blue="0.32941176470588235" alpha="1"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THB" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="59" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                        <rect key="frame" x="240" y="81" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" colorSpace="calibratedRGB" red="0.75294117647058822" green="0" blue="0.53333333333333333" alpha="1"/>
+                        <nil key="highlightedColor"/>
+                        <color key="backgroundColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THB" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="60" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                        <rect key="frame" x="240" y="126" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" colorSpace="calibratedRGB" red="0.75294117647058822" green="0" blue="0.53333333333333333" alpha="1"/>
+                        <nil key="highlightedColor"/>
+                        <color key="backgroundColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THB" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="61" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                        <rect key="frame" x="240" y="169" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" colorSpace="calibratedRGB" red="0.75294117647058822" green="0" blue="0.53333333333333333" alpha="1"/>
+                        <nil key="highlightedColor"/>
+                        <color key="backgroundColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
                     </label>
                 </subviews>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="FlightNumberLabel" destination="17" id="name-outlet-17"/>
+                <outlet property="AirlineLabel" destination="18" id="name-outlet-18"/>
+                <outlet property="FromLabel" destination="19" id="name-outlet-19"/>
+                <outlet property="ToLabel" destination="20" id="name-outlet-20"/>
+                <outlet property="FlexSavePriceLabel" destination="21" id="name-outlet-21"/>
+                <outlet property="FlexPriceLabel" destination="22" id="name-outlet-22"/>
+                <outlet property="FullFlexPriceLabel" destination="23" id="name-outlet-23"/>
+                <outlet property="DurationLabel" destination="26" id="name-outlet-26"/>
+                <outlet property="FlexiSaverCurrencyLabel" destination="59" id="name-outlet-59"/>
+                <outlet property="FlexiCurrencyLabel" destination="60" id="name-outlet-60"/>
+                <outlet property="FullFlexCurrencyLabel" destination="61" id="name-outlet-61"/>
+            </connections>
         </tableViewCell>
     </objects>
     <resources>

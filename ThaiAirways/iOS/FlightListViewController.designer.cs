@@ -19,7 +19,15 @@ namespace ThaiAirways.iOS
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UILabel DepartDateLabel { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UITableView FlightListTableView { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UILabel ReturnDateLabel { get; set; }
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
@@ -32,9 +40,19 @@ namespace ThaiAirways.iOS
                 BackButton = null;
             }
 
+            if (DepartDateLabel != null) {
+                DepartDateLabel.Dispose ();
+                DepartDateLabel = null;
+            }
+
             if (FlightListTableView != null) {
                 FlightListTableView.Dispose ();
                 FlightListTableView = null;
+            }
+
+            if (ReturnDateLabel != null) {
+                ReturnDateLabel.Dispose ();
+                ReturnDateLabel = null;
             }
 
             if (TotalFlightLabel != null) {

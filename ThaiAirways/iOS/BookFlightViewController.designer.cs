@@ -16,14 +16,51 @@ namespace ThaiAirways.iOS
     {
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UILabel AdultLabel { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UIButton BackButton { get; set; }
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UIButton BookFlightButton { get; set; }
 
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UILabel ChildrenLabel { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UILabel ClassLabel { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UILabel DepartDateLable { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UILabel DepartMonthLabel { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UILabel InfantsLabel { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UILabel ReturnDateLabel { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UILabel ReturnMonthLabel { get; set; }
+
         void ReleaseDesignerOutlets ()
         {
+            if (AdultLabel != null) {
+                AdultLabel.Dispose ();
+                AdultLabel = null;
+            }
+
             if (BackButton != null) {
                 BackButton.Dispose ();
                 BackButton = null;
@@ -32,6 +69,41 @@ namespace ThaiAirways.iOS
             if (BookFlightButton != null) {
                 BookFlightButton.Dispose ();
                 BookFlightButton = null;
+            }
+
+            if (ChildrenLabel != null) {
+                ChildrenLabel.Dispose ();
+                ChildrenLabel = null;
+            }
+
+            if (ClassLabel != null) {
+                ClassLabel.Dispose ();
+                ClassLabel = null;
+            }
+
+            if (DepartDateLable != null) {
+                DepartDateLable.Dispose ();
+                DepartDateLable = null;
+            }
+
+            if (DepartMonthLabel != null) {
+                DepartMonthLabel.Dispose ();
+                DepartMonthLabel = null;
+            }
+
+            if (InfantsLabel != null) {
+                InfantsLabel.Dispose ();
+                InfantsLabel = null;
+            }
+
+            if (ReturnDateLabel != null) {
+                ReturnDateLabel.Dispose ();
+                ReturnDateLabel = null;
+            }
+
+            if (ReturnMonthLabel != null) {
+                ReturnMonthLabel.Dispose ();
+                ReturnMonthLabel = null;
             }
         }
     }

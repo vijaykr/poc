@@ -33,6 +33,9 @@
     <Compile Include="Model\ContentModel.cs" />
     <Compile Include="Vo\Contenttem.cs" />
     <Compile Include="Utils\CrossPlatformUtils.cs" />
+    <Compile Include="Model\FlighSearchModel.cs" />
+    <Compile Include="Vo\FlightSearchContent.cs" />
+    <Compile Include="Vo\FlightSearchEntity.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Model\" />
