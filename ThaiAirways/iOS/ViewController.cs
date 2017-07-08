@@ -9,9 +9,8 @@ using ThaiAirways.Utils;
 
 namespace ThaiAirways.iOS
 {
-    public partial class ViewController : UIViewController
-    {
-
+	public partial class ViewController : UIViewController
+	{
         Product product1;
 		Product product2;
 
@@ -50,14 +49,22 @@ namespace ThaiAirways.iOS
 
             todayDate.Text = CrossPlatformUtils.TodayDate();
 
+
+            BottomTabBar.ItemSelected += BottomTabBar_ItemSelected;
+
 		}
+
+        public override void ViewWillAppear(bool animated)
+        {
+            base.ViewWillAppear(animated);
+
+            NavigationController.NavigationBar.Hidden = true;
+        }
 
 
         public override void ViewDidAppear(bool animated)
         {
             base.ViewDidAppear(animated);
-
-
 		}
 
         public override void DidReceiveMemoryWarning()
@@ -65,5 +72,19 @@ namespace ThaiAirways.iOS
             base.DidReceiveMemoryWarning();
             // Release any cached data, images, etc that aren't in use.		
         }
-    }
+
+        void BottomTabBar_ItemSelected(object sender, UITabBarItemEventArgs e)
+		{
+            if(e.Item.Tag == 0)
+            {
+				var storyboard = UIStoryboard.FromName("Main", null);
+
+				BookFlightViewController bookFlightViewController = storyboard.InstantiateViewController("BookFlightViewController")
+								 as BookFlightViewController;
+                NavigationController.PushViewController(bookFlightViewController, true);
+			}
+
+		}
+
+	}
 }

@@ -7,31 +7,21 @@
 using Foundation;
 using System;
 using System.CodeDom.Compiler;
-using UIKit;
 
 namespace ThaiAirways.iOS
 {
-    [Register ("BookFlightViewController")]
-    partial class BookFlightViewController
+    [Register ("FlightListViewController")]
+    partial class FlightListViewController
     {
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UIButton BackButton { get; set; }
-
-        [Outlet]
-        [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UIButton BookFlightButton { get; set; }
 
         void ReleaseDesignerOutlets ()
         {
             if (BackButton != null) {
                 BackButton.Dispose ();
                 BackButton = null;
-            }
-
-            if (BookFlightButton != null) {
-                BookFlightButton.Dispose ();
-                BookFlightButton = null;
             }
         }
     }

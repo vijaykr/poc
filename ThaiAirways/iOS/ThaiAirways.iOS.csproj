@@ -188,6 +188,26 @@
     <ImageAsset Include="Assets.xcassets\flight_list_top_bar.imageset\flight_list_top_bar.png" />
     <ImageAsset Include="Assets.xcassets\flight_list_top_bar.imageset\flight_list_top_bar%402x.png" />
     <ImageAsset Include="Assets.xcassets\flight_list_top_bar.imageset\flight_list_top_bar%403x.png" />
+    <ImageAsset Include="Assets.xcassets\global_top_bar.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\global_top_bar.imageset\global_top_bar.png" />
+    <ImageAsset Include="Assets.xcassets\global_top_bar.imageset\global_top_bar%402x.png" />
+    <ImageAsset Include="Assets.xcassets\global_top_bar.imageset\global_top_bar%403x.png" />
+    <ImageAsset Include="Assets.xcassets\pax.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\pax.imageset\pax.png" />
+    <ImageAsset Include="Assets.xcassets\pax.imageset\pax%402x.png" />
+    <ImageAsset Include="Assets.xcassets\pax.imageset\pax%403x.png" />
+    <ImageAsset Include="Assets.xcassets\cabin_class.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\cabin_class.imageset\cabin_class.png" />
+    <ImageAsset Include="Assets.xcassets\cabin_class.imageset\cabin_class%402x.png" />
+    <ImageAsset Include="Assets.xcassets\cabin_class.imageset\cabin_class%403x.png" />
+    <ImageAsset Include="Assets.xcassets\depart.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\depart.imageset\depart.png" />
+    <ImageAsset Include="Assets.xcassets\depart.imageset\depart%402x.png" />
+    <ImageAsset Include="Assets.xcassets\depart.imageset\depart%403x.png" />
+    <ImageAsset Include="Assets.xcassets\filter.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\filter.imageset\fliter.png" />
+    <ImageAsset Include="Assets.xcassets\filter.imageset\fliter%402x.png" />
+    <ImageAsset Include="Assets.xcassets\filter.imageset\fliter%403x.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
@@ -212,10 +232,17 @@
     <Folder Include="Assets.xcassets\cross.imageset\" />
     <Folder Include="Assets.xcassets\time_back.imageset\" />
     <Folder Include="Assets.xcassets\flight_list_top_bar.imageset\" />
+    <Folder Include="View\" />
+    <Folder Include="Assets.xcassets\global_top_bar.imageset\" />
+    <Folder Include="Assets.xcassets\pax.imageset\" />
+    <Folder Include="Assets.xcassets\cabin_class.imageset\" />
+    <Folder Include="Assets.xcassets\depart.imageset\" />
+    <Folder Include="Assets.xcassets\filter.imageset\" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
     <InterfaceDefinition Include="Main.storyboard" />
+    <InterfaceDefinition Include="View\TopNavigationView.xib" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
@@ -232,6 +259,18 @@
     <Compile Include="BookFlightViewController.cs" />
     <Compile Include="BookFlightViewController.designer.cs">
       <DependentUpon>BookFlightViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestViewController.cs" />
+    <Compile Include="TestViewController.designer.cs">
+      <DependentUpon>TestViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\TopNavigationView.cs" />
+    <Compile Include="View\TopNavigationView.designer.cs">
+      <DependentUpon>TopNavigationView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FlightListViewController.cs" />
+    <Compile Include="FlightListViewController.designer.cs">
+      <DependentUpon>FlightListViewController.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />

@@ -18,6 +18,10 @@ namespace ThaiAirways.iOS
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UITabBar BottomTabBar { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UILabel desc1 { get; set; }
 
         [Outlet]
@@ -46,6 +50,11 @@ namespace ThaiAirways.iOS
 
         void ReleaseDesignerOutlets ()
         {
+            if (BottomTabBar != null) {
+                BottomTabBar.Dispose ();
+                BottomTabBar = null;
+            }
+
             if (desc1 != null) {
                 desc1.Dispose ();
                 desc1 = null;
