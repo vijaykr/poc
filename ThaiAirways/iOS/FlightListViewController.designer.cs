@@ -17,11 +17,29 @@ namespace ThaiAirways.iOS
         [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UIButton BackButton { get; set; }
 
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UITableView FlightListTableView { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UILabel TotalFlightLabel { get; set; }
+
         void ReleaseDesignerOutlets ()
         {
             if (BackButton != null) {
                 BackButton.Dispose ();
                 BackButton = null;
+            }
+
+            if (FlightListTableView != null) {
+                FlightListTableView.Dispose ();
+                FlightListTableView = null;
+            }
+
+            if (TotalFlightLabel != null) {
+                TotalFlightLabel.Dispose ();
+                TotalFlightLabel = null;
             }
         }
     }

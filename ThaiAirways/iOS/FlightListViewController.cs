@@ -3,6 +3,7 @@
 using System;
 
 using Foundation;
+using ThaiAirways.iOS.View;
 using UIKit;
 
 namespace ThaiAirways.iOS
@@ -18,6 +19,13 @@ namespace ThaiAirways.iOS
             base.ViewDidLoad();
 
 			BackButton.TouchUpInside += BackButton_TouchUpInside;
+
+
+            FlightListTableView.RegisterNibForCellReuse(FlightCardViewCell.Nib, "FlightCardViewCell");
+
+            FlightListTableView.Source = new FlightListTableViewSource();
+            FlightListTableView.ReloadData();
+
 		}
 
 		public override void ViewWillAppear(bool animated)

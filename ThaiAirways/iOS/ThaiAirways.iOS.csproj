@@ -208,6 +208,10 @@
     <ImageAsset Include="Assets.xcassets\filter.imageset\fliter.png" />
     <ImageAsset Include="Assets.xcassets\filter.imageset\fliter%402x.png" />
     <ImageAsset Include="Assets.xcassets\filter.imageset\fliter%403x.png" />
+    <ImageAsset Include="Assets.xcassets\flight_card.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\flight_card.imageset\flight_card.png" />
+    <ImageAsset Include="Assets.xcassets\flight_card.imageset\flight_card%402x.png" />
+    <ImageAsset Include="Assets.xcassets\flight_card.imageset\flight_card%403x.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
@@ -238,11 +242,13 @@
     <Folder Include="Assets.xcassets\cabin_class.imageset\" />
     <Folder Include="Assets.xcassets\depart.imageset\" />
     <Folder Include="Assets.xcassets\filter.imageset\" />
+    <Folder Include="Assets.xcassets\flight_card.imageset\" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
     <InterfaceDefinition Include="Main.storyboard" />
     <InterfaceDefinition Include="View\TopNavigationView.xib" />
+    <InterfaceDefinition Include="View\FlightCardViewCell.xib" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
@@ -272,6 +278,11 @@
     <Compile Include="FlightListViewController.designer.cs">
       <DependentUpon>FlightListViewController.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\FlightCardViewCell.cs" />
+    <Compile Include="View\FlightCardViewCell.designer.cs">
+      <DependentUpon>FlightCardViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FlightListTableViewSource.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" />

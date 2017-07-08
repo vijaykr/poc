@@ -1,24 +1,9 @@
 ﻿<Properties StartupConfiguration="{D0281075-69D6-4611-8B9E-7624C4FC6830}|Default">
   <MonoDevelop.Ide.ItemProperties.ThaiAirways.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.7F9C0FAA-A312-4032-964A-83F8F219F22D" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="iOS/Main.storyboard">
+  <MonoDevelop.Ide.Workbench ActiveDocument="iOS/ViewController.cs">
     <Files>
       <File FileName="iOS/ViewController.cs" Line="80" Column="1" />
-      <File FileName="iOS/Main.storyboard" />
-      <File FileName="iOS/BookFlightViewController.cs" Line="23" Column="1" />
-      <File FileName="iOS/FlightListViewController.cs" Line="25" Column="34" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="ThaiAirways" expanded="True">
-            <Node name="ThaiAirways.iOS" expanded="True">
-              <Node name="View" expanded="True" />
-              <Node name="Main.storyboard" selected="True" />
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
