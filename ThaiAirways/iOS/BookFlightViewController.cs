@@ -4,18 +4,26 @@ using UIKit;
 using ThaiAirways.Model;
 using ThaiAirways.Model.Vo;
 using BigTed;
+using ThaiAirways.Utils;
 
 namespace ThaiAirways.iOS
 {
     public partial class BookFlightViewController : UIViewController
     {
-        public BookFlightViewController (IntPtr handle) : base (handle)
+
+        DateTime departDate;
+		DateTime returnDate;
+
+		public BookFlightViewController (IntPtr handle) : base (handle)
         {
         }
 
 		public override void ViewDidLoad()
 		{
 			base.ViewDidLoad();
+
+            departDate = CrossPlatformUtils.GetDeaprtDate();
+			returnDate = CrossPlatformUtils.GetReturnDate();
 
 			BookFlightButton.TouchUpInside += BookFlightButton_TouchUpInside;
 			BackButton.TouchUpInside += BackButton_TouchUpInside;
@@ -28,16 +36,22 @@ namespace ThaiAirways.iOS
             base.ViewWillAppear(animated);
 
 			NavigationController.NavigationBar.Hidden = true;
+
+            DepartDateLabel.Text = CrossPlatformUtils.GetDayFromDate(departDate);
+            DepartMonthLabel.Text = CrossPlatformUtils.GetDayMonthFromDate(departDate);
+
+            ReturnDateLabel.Text = CrossPlatformUtils.GetDayFromDate(returnDate);
+            ReturnMonthLabel.Text = CrossPlatformUtils.GetDayMonthFromDate(returnDate);
 		}
 
 		void BookFlightButton_TouchUpInside(object sender, EventArgs e)
 		{
-            BTProgressHUD.ForceiOS6LookAndFeel = true;
-			BTProgressHUD.Show("Loading...");
+            //BTProgressHUD.ForceiOS6LookAndFeel = true;
+            BTProgressHUD.Show("Just a moment...", -1, ProgressHUD.MaskType.Gradient);
 
             InvokeInBackground(() =>
             {
-	            FlighSearchModel.Instance.GetFlightDetails(1, 0, 0, "ECONOMY", "2017-07-09", "BKK", 0, "", "HKG", "en-US", "USD");
+                FlighSearchModel.Instance.GetFlightDetails(1, 0, 0, "ECONOMY", departDate, "BKK", 0, returnDate, "HKG", "en-US", "USD");
 
 	            InvokeOnMainThread(() =>
 		        {

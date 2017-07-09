@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using System.Linq;
 using ThaiAirways.Model.Vo;
 using ThaiAirways.Utils;
+using System.Globalization;
 
 namespace ThaiAirways.Model
 {
@@ -30,7 +31,7 @@ namespace ThaiAirways.Model
             }
         }
 
-        public async System.Threading.Tasks.Task<FlightSearchContent> GetFlight(int AdultsCount, int ChildrenCount, int InfantCount, string CabinClass, string DepartureDate, string DepartFrom, int MaxStops, string ReturnDate, string DepartTo, string lang, string currency)
+        public async Task<FlightSearchContent> GetFlight(int AdultsCount, int ChildrenCount, int InfantCount, string CabinClass, DateTime DepartureDate, string DepartFrom, int MaxStops, DateTime? ReturnDate, string DepartTo, string lang, string currency)
         {
             var client = new RestClient("http://ux.openjawtech.com");
             var request = new RestRequest("swagger/flight/search", Method.POST);
@@ -39,7 +40,15 @@ namespace ThaiAirways.Model
             request.AddHeader("Accept-Language", lang);
             request.AddHeader("Currency-Code", currency);
 
-            request.AddBody(new { adults = AdultsCount, cabinClass = CabinClass, children = ChildrenCount, departureDate = DepartureDate, from = DepartFrom, infants = InfantCount, maxStops = MaxStops, returnDate = ReturnDate, to = DepartTo });
+            string departureDateStr = CrossPlatformUtils.GetDateInString(DepartureDate);
+
+            string returnDateStr = "";
+            if(ReturnDate != null)
+            {
+                returnDateStr = CrossPlatformUtils.GetDateInString(ReturnDate.Value);
+			}
+
+			request.AddBody(new { adults = AdultsCount, cabinClass = CabinClass, children = ChildrenCount, departureDate = departureDateStr, from = DepartFrom, infants = InfantCount, maxStops = MaxStops, returnDate = returnDateStr, to = DepartTo });
 
             var response = await client.Execute(request);
 
@@ -52,7 +61,7 @@ namespace ThaiAirways.Model
             return content;
         }
 
-        public void GetFlightDetails(int AdultsCount, int ChildrenCount, int InfantCount, string CabinClass, string DepartureDate, string DepartFrom, int MaxStops, string ReturnDate, string DepartTo, string lang, string currency)
+        public void GetFlightDetails(int AdultsCount, int ChildrenCount, int InfantCount, string CabinClass, DateTime DepartureDate, string DepartFrom, int MaxStops, DateTime? ReturnDate, string DepartTo, string lang, string currency)
         {
             FlightSearchContent fsc;
             List<FlightSearchEntity> FlightSearchEntitylist = new List<FlightSearchEntity>();
@@ -64,15 +73,34 @@ namespace ThaiAirways.Model
                 FlightSearchEntity flight = new FlightSearchEntity();
                 string flightLeg = "";
 
+
+
                 foreach (Result rs in fsc.resultlist)
                 {
                     FlightSearchEntity flightSearchEntity = new FlightSearchEntity();
                     int i = 0;
                     List<FareInfoEntity> FareInfoEntitylist = new List<FareInfoEntity>();
+
+                    bool isReturnFlight = false;
+                    if(rs.Direction == "return")
+                    {
+                        isReturnFlight = true;
+                    }
+
                     foreach (FlightPrice flightPrice in rs.FlightPriceList)
                     {
                         FareInfoEntity fareInfoEnt = new FareInfoEntity();
-                        fareInfoEnt.Amount = flightPrice.TotalPrice.Amount;
+
+                        if(isReturnFlight)
+                        {
+                            double price = Convert.ToDouble(flightPrice.TotalPrice.Amount) / 2;
+                            fareInfoEnt.Amount = price.ToString(CultureInfo.InvariantCulture);
+						}
+                        else
+                        {
+							fareInfoEnt.Amount = flightPrice.TotalPrice.Amount;
+						}
+
                         fareInfoEnt.Currency = flightPrice.TotalPrice.CurrencyCode;
                         fareInfoEnt.ClassType = flightPrice.FareInfoList[i].FareFamilyCode;
 

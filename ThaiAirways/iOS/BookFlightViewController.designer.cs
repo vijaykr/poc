@@ -36,7 +36,7 @@ namespace ThaiAirways.iOS
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UILabel DepartDateLable { get; set; }
+        UIKit.UILabel DepartDateLabel { get; set; }
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
@@ -81,9 +81,9 @@ namespace ThaiAirways.iOS
                 ClassLabel = null;
             }
 
-            if (DepartDateLable != null) {
-                DepartDateLable.Dispose ();
-                DepartDateLable = null;
+            if (DepartDateLabel != null) {
+                DepartDateLabel.Dispose ();
+                DepartDateLabel = null;
             }
 
             if (DepartMonthLabel != null) {

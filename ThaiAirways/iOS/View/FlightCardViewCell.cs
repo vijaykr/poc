@@ -28,11 +28,11 @@ namespace ThaiAirways.iOS.View
             AirlineLabel.Text = "|  " + CrossPlatformUtils.GetAirlineNameByCode(flightSearchEntity.MarketingAirline);
             FromLabel.Text = flightSearchEntity.DepartTime + " " + flightSearchEntity.DestCode;
 			ToLabel.Text = flightSearchEntity.ArrCode + " " + flightSearchEntity.ArrTime;
-            DurationLabel.Text = flightSearchEntity.Duration;
+            DurationLabel.Text = CrossPlatformUtils.GetDurationFormat(flightSearchEntity.Duration);
 
             FareInfoEntity fareInfoEntity = flightSearchEntity.FareInfo.ToArray()[0];
             FlexiSaverCurrencyLabel.Text = fareInfoEntity.Currency;
-            FlexSavePriceLabel.Text = fareInfoEntity.Amount;
+            FlexSavePriceLabel.Text = CrossPlatformUtils.GetCurencyInString(fareInfoEntity.Amount);
 
             FlexiCurrencyLabel.Text = "";
             FullFlexCurrencyLabel.Text = "";

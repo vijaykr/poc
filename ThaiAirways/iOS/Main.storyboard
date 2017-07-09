@@ -318,8 +318,8 @@
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Apr 2017" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZJM-ee-FP4">
-                                        <rect key="frame" x="53" y="27" width="69" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Apr 2017 Monday" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZJM-ee-FP4" numberOfLines="0">
+                                        <rect key="frame" x="53" y="25" width="70" height="40"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
@@ -357,8 +357,8 @@
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Apr 2017" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XaE-Yl-Zwo">
-                                        <rect key="frame" x="53" y="27" width="69" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Apr 2017 Monday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XaE-Yl-Zwo" numberOfLines="2">
+                                        <rect key="frame" x="53" y="25" width="70" height="40"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
@@ -479,7 +479,7 @@
                     <connections>
                         <outlet property="BackButton" destination="t5X-e2-wUg" id="name-outlet-t5X-e2-wUg"/>
                         <outlet property="BookFlightButton" destination="Pyi-8E-IYx" id="name-outlet-Pyi-8E-IYx"/>
-                        <outlet property="DepartDateLable" destination="S3j-UC-BS3" id="name-outlet-S3j-UC-BS3"/>
+                        <outlet property="DepartDateLabel" destination="S3j-UC-BS3" id="name-outlet-S3j-UC-BS3"/>
                         <outlet property="ReturnDateLabel" destination="cfM-Y5-tyM" id="name-outlet-cfM-Y5-tyM"/>
                         <outlet property="DepartMonthLabel" destination="ZJM-ee-FP4" id="name-outlet-ZJM-ee-FP4"/>
                         <outlet property="ReturnMonthLabel" destination="XaE-Yl-Zwo" id="name-outlet-XaE-Yl-Zwo"/>

@@ -5,12 +5,16 @@ using System;
 using Foundation;
 using ThaiAirways.iOS.View;
 using ThaiAirways.Model;
+using ThaiAirways.Utils;
 using UIKit;
 
 namespace ThaiAirways.iOS
 {
 	public partial class FlightListViewController : UIViewController
 	{
+		DateTime departDate;
+		DateTime returnDate;
+
 		public FlightListViewController (IntPtr handle) : base (handle)
 		{
 		}
@@ -18,6 +22,9 @@ namespace ThaiAirways.iOS
         public override void ViewDidLoad()
         {
             base.ViewDidLoad();
+
+			departDate = CrossPlatformUtils.GetDeaprtDate();
+			returnDate = CrossPlatformUtils.GetReturnDate();
 
 			BackButton.TouchUpInside += BackButton_TouchUpInside;
 
@@ -36,6 +43,9 @@ namespace ThaiAirways.iOS
 			NavigationController.NavigationBar.Hidden = true;
 
             TotalFlightLabel.Text = FlighSearchModel.Instance.FlightList.Count + " Flights";
+
+            DepartDateLabel.Text = CrossPlatformUtils.GetDateInDayDateMonth(departDate);
+            ReturnDateLabel.Text = CrossPlatformUtils.GetDateInDayDateMonth(returnDate);
 		}
 
 		void BackButton_TouchUpInside(object sender, EventArgs e)
