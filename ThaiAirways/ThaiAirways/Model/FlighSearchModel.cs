@@ -91,19 +91,30 @@ namespace ThaiAirways.Model
                     {
                         FareInfoEntity fareInfoEnt = new FareInfoEntity();
 
-                        if(isReturnFlight)
+                        //To Change USD currency to THB & also convert the amount for the same.
+                        double TotalPriceAmount = Convert.ToDouble(flightPrice.TotalPrice.Amount);
+                        if (flightPrice.TotalPrice.CurrencyCode == "USD")
                         {
-                            double price = Convert.ToDouble(flightPrice.TotalPrice.Amount) / 2;
+                            TotalPriceAmount = TotalPriceAmount * 34;
+                            fareInfoEnt.Currency = "THB";
+                        }
+                        else
+                        {
+                            fareInfoEnt.Currency = flightPrice.TotalPrice.CurrencyCode;
+                        }
+
+                        if (isReturnFlight)
+                        {
+                            double price = TotalPriceAmount / 2;
                             fareInfoEnt.Amount = price.ToString(CultureInfo.InvariantCulture);
 						}
                         else
                         {
-							fareInfoEnt.Amount = flightPrice.TotalPrice.Amount;
+							fareInfoEnt.Amount = TotalPriceAmount.ToString();
 						}
 
-                        fareInfoEnt.Currency = flightPrice.TotalPrice.CurrencyCode;
+                        
                         fareInfoEnt.ClassType = flightPrice.FareInfoList[i].FareFamilyCode;
-
                         FareInfoEntitylist.Add(fareInfoEnt);
                         //add fli
 
