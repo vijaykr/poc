@@ -23,7 +23,6 @@ namespace ThaiAirways.iOS
         {
             base.ViewDidLoad();
 
-
             if (CrossConnectivity.Current.IsConnected)
             {
                 var TaskResult = Task.Run(async () =>
@@ -81,7 +80,11 @@ namespace ThaiAirways.iOS
             base.ViewWillAppear(animated);
 
             NavigationController.NavigationBar.Hidden = true;
-        }
+
+            //Deselect the tab bar
+            BottomTabBar.SelectedItem = null;
+
+		}
 
 
         public override void ViewDidAppear(bool animated)
