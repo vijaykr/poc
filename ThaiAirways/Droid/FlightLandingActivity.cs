@@ -4,12 +4,16 @@ using Android.OS;
 using Android.Views;
 using Android.Support.V7.App;
 using Android.Support.Design.Widget;
+using System;
+using ThaiAirways.Model;
+using ThaiAirways.Utils;
 
 namespace ThaiAirways.Droid
 {
     [Activity(Label = "ThaiAirways", MainLauncher = true, Icon = "@drawable/icon", Theme ="@style/Theme.AppCompat.Light.NoActionBar")]
     public class FlightLandingActivity : AppCompatActivity
     {
+        String currentDate;
         protected override void OnCreate(Bundle bundle)
         {
             RequestWindowFeature(WindowFeatures.NoTitle);
@@ -18,6 +22,10 @@ namespace ThaiAirways.Droid
 
             // Set our view from the "main" layout resource
             SetContentView (Resource.Layout.FlightLanding);
+
+            currentDate = CrossPlatformUtils.TodayDate();
+            TextView currentdateview = FindViewById<TextView>(Resource.Id.textView8);
+            currentdateview.Text = currentDate;
 
             var bottomNavigaion = FindViewById<BottomNavigationView>(Resource.Id.bottom_navigation_view);
             bottomNavigaion.NavigationItemSelected += (s, e) =>
