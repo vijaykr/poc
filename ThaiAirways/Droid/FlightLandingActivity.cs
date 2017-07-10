@@ -25,8 +25,7 @@ namespace ThaiAirways.Droid
                 switch(e.Item.ItemId)
                 {
                     case Resource.Id.book_flight:
-
-                        Toast.MakeText(this, "Book Flight Clicked", ToastLength.Short).Show();
+                        StartActivity(typeof(FlightBookingActivity));
                         break;
 
                     case Resource.Id.timetable:

@@ -34,6 +34,8 @@ namespace ThaiAirways.Droid
             returnDate = CrossPlatformUtils.GetReturnDate();
 
             FlighSearchModel.Instance.GetFlightDetails(1, 0, 0, "ECONOMY", departDate, "BKK", 0, returnDate, "HKG", "en-US", "USD");
+
+            StartActivity(typeof(FlightListActivity));
         }
 
 

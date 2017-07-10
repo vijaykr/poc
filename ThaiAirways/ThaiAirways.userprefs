@@ -1,8 +1,12 @@
-﻿<Properties StartupConfiguration="{D0281075-69D6-4611-8B9E-7624C4FC6830}|Default">
+﻿<Properties StartupConfiguration="{E44F059A-8484-4943-A29A-AA1D14F23444}|Default">
   <MonoDevelop.Ide.ItemProperties.ThaiAirways.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.7F9C0FAA-A312-4032-964A-83F8F219F22D" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="iOS/ViewController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Droid/FlightRecyclerAdapter.cs">
     <Files>
-      <File FileName="iOS/ViewController.cs" Line="98" Column="4" />
+      <File FileName="iOS/ViewController.cs" Line="26" Column="55" />
+      <File FileName="ThaiAirways/Utils/CrossPlatformUtils.cs" Line="38" Column="9" />
+      <File FileName="Droid/FlightLandingActivity.cs" Line="17" Column="35" />
+      <File FileName="Droid/FlightBookingActivity.cs" Line="38" Column="1" />
+      <File FileName="Droid/FlightRecyclerAdapter.cs" Line="55" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
@@ -17,4 +21,5 @@
     <Watch file="ThaiAirways/Model/ContentModel.cs" line="34" offsetX="429" offsetY="495" expression="response" liveUpdate="False" />
   </MonoDevelop.Ide.DebuggingService.PinnedWatches>
   <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.ThaiAirways.Droid PreferredExecutionTarget="Android.192.168.57.101:5555" />
 </Properties>
