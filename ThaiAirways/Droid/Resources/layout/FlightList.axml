@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px">
+        <LinearLayout
+            android:background="@mipmap/thai_header_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:minWidth="25px"
+            android:minHeight="25px">
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="fill_parent"
+                android:padding="10dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:src="@mipmap/back_arrow"
+                    android:layout_width="20dp"
+                    android:paddingTop="@dimen/padding_5"
+                    android:layout_height="20dp"
+                    android:layout_weight="0.01"
+                    android:id="@+id/imgBackArrowTop" />
+                <TextView
+                    android:textSize="@dimen/title_font_size"
+                    android:id="@+id/txtOriginToDestPlaceTop"
+                    android:text="@string/BangkokToHongKong"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:layout_weight="0.99"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="fill_parent"
+                android:padding="5dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/txtDepStringTop"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Depart" />
+                <TextView
+                    android:id="@+id/txtRetStringTop"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/disabled"
+                    android:text="@string/Return" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/txtDepDateTop"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/title_font_size"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:text="@string/DepartDate" />
+                <TextView
+                    android:id="@+id/txtRetDateTop"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/title_font_size"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:textColor="@color/disabled"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ReturnDate" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linearLayout4"
+                android:layout_width="fill_parent"
+                android:padding="10dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="2dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginRight="@dimen/padding_5"
+                    android:background="@android:color/white" />
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/padding_5"
+                    android:gravity="center"
+                    android:background="@color/disabled" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linearLayout5"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/padding_10"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/txtSelectAFlightLeft"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:text="@string/SelectAFlight" />
+                <TextView
+                    android:id="@+id/txtSelectAFlightRight"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:textColor="@color/disabled"
+                    android:layout_height="wrap_content"
+                    android:text="@string/SelectAFlight" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/padding_10"
+            android:paddingBottom="@dimen/padding_15"
+            android:paddingLeft="@dimen/padding_15">
+            <TextView
+                android:id="@+id/txtSelectAFlightParagraph"
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/small_font_size"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/gray"
+                android:layout_height="wrap_content"
+                android:text="@string/SelectAFlightParagraphText" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:src="@mipmap/fliter" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linearLayout6"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/padding_15"
+            android:paddingLeft="@dimen/padding_15"
+            android:paddingRight="@dimen/padding_15"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/txtNumberOfFlights"
+                android:layout_width="wrap_content"
+                android:layout_weight="0.05"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:textColor="@color/gray"
+                android:layout_height="wrap_content"
+                android:text="@string/NumberOfFlights" />
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_weight="0.95"
+                android:layout_centerHorizontal="true"
+                android:gravity="left"
+                android:textColor="@color/gray"
+                android:layout_height="wrap_content"
+                android:text="@string/AfterNumberOfFlights" />
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_centerHorizontal="true"
+                android:gravity="right"
+                android:textColor="@color/purple"
+                android:layout_height="wrap_content"
+                android:text="@string/FamilyFareBenefits" />
+        </LinearLayout>
+      
+       <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:scrollbars="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+      
+        
+    </LinearLayout>
+</RelativeLayout>
