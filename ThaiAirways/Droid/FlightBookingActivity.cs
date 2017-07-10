@@ -21,12 +21,11 @@ namespace ThaiAirways.Droid
         DateTime departDate;
         DateTime returnDate;
 
-
-        protected override void OnCreate(Bundle bundle)
+        protected override void OnCreate(Bundle savedInstanceState)
         {
             RequestWindowFeature(WindowFeatures.NoTitle);
 
-            base.OnCreate(bundle);
+            base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.FlightBooking);
 
             departDate = CrossPlatformUtils.GetDeaprtDate();

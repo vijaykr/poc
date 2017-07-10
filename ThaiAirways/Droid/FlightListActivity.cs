@@ -44,11 +44,10 @@ namespace ThaiAirways.Droid
             FindViewById<TextView>(Resource.Id.txtNumberOfFlights).Text = flightsData.Count.ToString();
             // FindViewById<TextView>(Resource.Id.txtOriginToDestPlaceTop).Text = flightsData[0].DestCode.ToUpper() +" to "+ flightsData[0].ArrCode.ToUpper();
             FindViewById<TextView>(Resource.Id.txtOriginToDestPlaceTop).Text = "Bangkok to Hong Kong";
-            FindViewById<TextView>(Resource.Id.txtDepDateTop).Text = Convert.ToDateTime( flightsData[0].DepartDate).ToString("ddd")+" "+ Convert.ToDateTime(flightsData[0].DepartDate).Day+" "+ Convert.ToDateTime(flightsData[0].DepartDate).ToString("MMM");
+            FindViewById<TextView>(Resource.Id.txtDepDateTop).Text = CrossPlatformUtils.GetDateInDayDateMonth(departDate);
+            FindViewById<TextView>(Resource.Id.txtRetDateTop).Text = CrossPlatformUtils.GetDateInDayDateMonth(returnDate);
 
-
-
-            ImageView Backbutton = FindViewById<ImageView>(Resource.Id.imgBackArrowTop);
+			ImageView Backbutton = FindViewById<ImageView>(Resource.Id.imgBackArrowTop);
             Backbutton.Click += delegate {
                 Finish();
             };
@@ -60,58 +59,10 @@ namespace ThaiAirways.Droid
             mRecyclerView.SetLayoutManager(mLayoutManager);
             //mRecyclerView.GetLayoutManager().ScrollToPosition(200);
            
-
             // Plug in my adapter:
             mAdapter = new FlightRecyclerAdapter(flightsData);
             mRecyclerView.SetAdapter(mAdapter);
         }
-
-        //public List<FlightSearchEntity> GetFlightsData()
-        //{
-        //    List<FlightSearchEntity> flights = new List<FlightSearchEntity>();
-        //    FlightSearchEntity flight = new FlightSearchEntity();       
-            
-
-        //    for (int i = 0; i < 7; i++)
-        //    {
-                
-
-
-        //        flight.Duration = "03:10:00";
-        //        flight.DestCode = "del";
-        //        flight.ArrCode = "LHR";
-        //        flight.DepartDate = "2017-07-09T11:15:00";
-        //        flight.ArrDate = "2017-07-09T14:25:00";
-        //        flight.EquipmentType = "600";
-        //        flight.MarketingAirline = "TG";
-        //        flight.OperatingAirline = "TG";
-        //        flight.FareInfo = new FareInfo[3];
-
-
-        //        FareInfo finfo1 = new FareInfo();
-        //        finfo1.ClassType = "ECOPRO" + i.ToString();
-        //        finfo1.Currency = "USD";
-        //        finfo1.Amount = "5,200";
-        //        FareInfo finfo2 = new FareInfo();
-        //        finfo2.ClassType = "ECOPRO" + (i + 1).ToString();
-        //        finfo2.Currency = "USD";
-        //        finfo2.Amount = "5,200";
-        //        FareInfo finfo3 = new FareInfo();
-        //        finfo3.ClassType = "ECOPRO" + (i + 2).ToString(); ;
-        //        finfo3.Currency = "USD";
-        //        finfo3.Amount = "5,200";
-                
-             
-        //        flight.FareInfo[0] = finfo1;
-        //        flight.FareInfo[1] = finfo2;
-        //        flight.FareInfo[2] = finfo3;
-
-        //        flights.Add(flight);
-        //    }
-
-           
-        //    return flights;
-        //} 
     }
     
 }

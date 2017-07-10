@@ -7,6 +7,10 @@ using Android.Support.Design.Widget;
 using System;
 using ThaiAirways.Model;
 using ThaiAirways.Utils;
+using ThaiAirways.Vo;
+using System.Threading.Tasks;
+using Plugin.Connectivity;
+using Square.Picasso;
 
 namespace ThaiAirways.Droid
 {
@@ -14,11 +18,15 @@ namespace ThaiAirways.Droid
     public class FlightLandingActivity : AppCompatActivity
     {
         String currentDate;
-        protected override void OnCreate(Bundle bundle)
-        {
-            RequestWindowFeature(WindowFeatures.NoTitle);
 
-            base.OnCreate(bundle);
+		Product product1;
+		Product product2;
+
+		protected override void OnCreate(Bundle bundle)
+        {
+			this.RequestWindowFeature(WindowFeatures.NoTitle);
+
+			base.OnCreate(bundle);
 
             // Set our view from the "main" layout resource
             SetContentView (Resource.Layout.FlightLanding);
@@ -27,7 +35,44 @@ namespace ThaiAirways.Droid
             TextView currentdateview = FindViewById<TextView>(Resource.Id.textView8);
             currentdateview.Text = currentDate;
 
-            var bottomNavigaion = FindViewById<BottomNavigationView>(Resource.Id.bottom_navigation_view);
+			if (CrossConnectivity.Current.IsConnected)
+			{
+				var TaskResult = Task.Run(async () =>
+				{
+					var products = await ContentModel.Instance.GetContensAsync();
+					var product_arr = products.ToArray();
+					product1 = product_arr[0];
+					product2 = product_arr[1];
+				});
+
+				Task.WaitAny(TaskResult);
+
+                FindViewById<TextView>(Resource.Id.promotion1_title_text_view).Text = product1.Title;
+				FindViewById<TextView>(Resource.Id.promotion1_desc_text_view).Text = product1.Description;
+
+                Picasso.With(this)
+                       .Load(product1.Image)
+                       .Into(FindViewById<ImageView>(Resource.Id.promotion1_image_view));
+
+				FindViewById<TextView>(Resource.Id.promotion2_title_text_view).Text = product2.Title;
+				FindViewById<TextView>(Resource.Id.promotion2_desc_text_view).Text = product2.Description;
+
+				Picasso.With(this)
+                       .Load(product2.Image)
+                       .Into(FindViewById<ImageView>(Resource.Id.promotion2_image_view));
+			}
+			else
+			{
+
+				FindViewById<TextView>(Resource.Id.promotion1_title_text_view).Text = "";
+				FindViewById<TextView>(Resource.Id.promotion1_desc_text_view).Text = "";
+
+				FindViewById<TextView>(Resource.Id.promotion2_title_text_view).Text = "";
+				FindViewById<TextView>(Resource.Id.promotion2_desc_text_view).Text = "";
+			}
+
+
+			var bottomNavigaion = FindViewById<BottomNavigationView>(Resource.Id.bottom_navigation_view);
             bottomNavigaion.NavigationItemSelected += (s, e) =>
             {
                 switch(e.Item.ItemId)

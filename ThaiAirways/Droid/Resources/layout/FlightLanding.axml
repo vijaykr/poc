@@ -15,7 +15,8 @@
         <ImageView
             android:src="@mipmap/top_nav"
             android:layout_width="match_parent"
-            android:layout_height="85dp"
+            android:layout_height="60dp"
+            android:scaleType="centerCrop"
             android:id="@+id/imageView1" />
         <RelativeLayout
             android:minWidth="25px"
@@ -82,80 +83,76 @@
         </RelativeLayout>
         <LinearLayout
             android:orientation="horizontal"
-            android:minWidth="25px"
-            android:minHeight="25px"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/linearLayout1"
-            android:paddingTop="15dp"
-            android:paddingRight="15dp"
-            android:paddingLeft="15dp">
-            <ImageView
-                android:layout_width="wrap_content"
-                android:src="@mipmap/promotion"
-                android:layout_height="80dp"
-                android:id="@+id/imageView3"
-                android:layout_weight="1" />
-            <ImageView
-                android:layout_width="wrap_content"
-                android:src="@mipmap/travel_extra"
-                android:layout_height="80dp"
-                android:id="@+id/imageView4"
-                android:layout_weight="1" />
-        </LinearLayout>
-        <LinearLayout
-            android:orientation="horizontal"
-            android:minWidth="25px"
-            android:minHeight="25px"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/linearLayout2"
-            android:paddingTop="5dp"
-            android:paddingLeft="15sp">
-            <TextView
-                android:text="Promotions"
-                android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_height="200dp"
+            android:id="@+id/linearLayout3">
+            <LinearLayout
+                android:orientation="vertical"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/textView1"
-                android:layout_weight="1"
-                android:textSize="18sp"
-                android:textColor="@color/colorpurple" />
-            <TextView
-                android:text="Travel Extras"
-                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/linearLayout1">
+                <ImageView
+                    android:layout_width="170dp"
+                    android:src="@mipmap/promotion"
+                    android:layout_height="80dp"
+                    android:id="@+id/promotion1_image_view"
+                    android:layout_weight="1"
+                    android:scaleType="fitStart" />
+                <TextView
+                    android:text="Promotions"
+                    android:layout_marginTop="5dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/promotion1_title_text_view"
+                    android:layout_weight="1"
+                    android:textSize="18sp"
+                    android:textColor="@color/colorpurple" />
+                <TextView
+                    android:text="See our current offers."
+                    android:layout_marginTop="2dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/promotion1_desc_text_view"
+                    android:layout_weight="1"
+                    android:textSize="14sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/textView2"
-                android:layout_weight="1"
-                android:textSize="18sp"
-                android:textColor="@color/colorpurple" />
-        </LinearLayout>
-        <LinearLayout
-            android:orientation="horizontal"
-            android:minWidth="25px"
-            android:minHeight="25px"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/linearLayout3"
-            android:paddingLeft="15dp"
-            android:paddingBottom="10dp">
-            <TextView
-                android:text="See our current offers."
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/textView3"
-                android:layout_weight="1"
-                android:textSize="14sp" />
-            <TextView
-                android:text="Book hotel and hire car."
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/textView4"
-                android:layout_weight="1"
-                android:textSize="14sp" />
+                android:id="@+id/linearLayout2">
+                <ImageView
+                    android:layout_width="170dp"
+                    android:src="@mipmap/travel_extra"
+                    android:layout_height="80dp"
+                    android:id="@+id/promotion2_image_view"
+                    android:layout_weight="1"
+                    android:scaleType="fitStart" />
+                <TextView
+                    android:text="Travel Extras"
+                    android:layout_marginTop="5dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/promotion2_title_text_view"
+                    android:layout_weight="1"
+                    android:textSize="18sp"
+                    android:textColor="@color/colorpurple" />
+                <TextView
+                    android:text="Book hotel and hire car."
+                    android:layout_marginTop="2dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/promotion2_desc_text_view"
+                    android:layout_weight="1"
+                    android:textSize="14sp" />
+            </LinearLayout>
         </LinearLayout>
         <ImageView
             android:src="@mipmap/nav_line"
