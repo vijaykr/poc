@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px">
+  <RelativeLayout
+      android:minWidth="25px"
+      android:minHeight="25px"
+      android:layout_width="match_parent"
+      android:layout_height="72dp"
+      android:id="@+id/relativeLayout1"
+      android:background="@mipmap/thai_pattern_bg">
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/fill"
+        android:id="@+id/imageView1"
+        android:paddingTop="20dp"
+        android:paddingLeft="10dp"
+        android:maxWidth="20dp" />
+    <TextView
+        android:text="Book a trip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView1"
+        android:gravity="center"
+        android:paddingTop="20dp"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        android:textColor="#FFFFFF" />
+  </RelativeLayout>
+  <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Round Trip"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="#330066"
+        android:textSize="18sp" />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="One way"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="#330066"
+        android:textSize="18sp" />
+  </LinearLayout>
+  <RelativeLayout
+      android:minWidth="25px"
+      android:minHeight="25px"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/relativeLayoutln">
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/line"
+        android:id="@+id/imageView2"
+        android:layout_marginLeft="20dp"
+
+        android:paddingRight="40dp" />
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/line"
+        android:layout_marginLeft="350dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp" />
+  </RelativeLayout>
+  <RelativeLayout
+      android:minWidth="25px"
+      android:minHeight="25px"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+    <Space
+        android:layout_width="1dp"
+        android:layout_height="20dp" />
+  </RelativeLayout>
+  <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content">
+    <TextView
+        android:text="From"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:textColor="#979797"
+            />
+    <TextView
+        android:text=""
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+            />
+    <TextView
+        android:text="To"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:textColor="#979797"
+        android:layout_alignParentRight="true"
+            />
+  </LinearLayout>
+  <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content">
+    <TextView
+        android:text="BKK"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="#4A4A4A"
+        android:textSize="56sp" />
+    <ImageView
+        android:layout_gravity="center_vertical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/plane"
+        android:layout_weight="1"
+        android:gravity="center"            />
+    <TextView
+        android:text="HKG"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="#4A4A4A"
+        android:textSize="56sp" />
+  </LinearLayout>
+  <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content">
+    <TextView
+        android:text="Bangkok"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="#4A4A4A"
+        android:textSize="16sp"/>
+    <TextView
+        android:text=""
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="#4A4A4A" />
+    <TextView
+        android:text="Hong Kong"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:textColor="#4A4A4A"
+        android:textSize="16sp"/>
+  </LinearLayout>
+
+  <RelativeLayout
+      android:minWidth="25px"
+      android:minHeight="25px"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+    <Space
+        android:layout_width="1dp"
+        android:layout_height="20dp" />
+  </RelativeLayout>
+  <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content">
+    <TextView
+        android:text="Depart on "
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingLeft="20dp"
+        android:textSize="14sp"
+        android:gravity="left"
+        android:textColor="#979797"
+            />
+    <TextView
+        android:text="Return on"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="left"
+        android:paddingLeft="20dp"
+        android:textSize="14sp"
+        android:textColor="#979797"/>
+  </LinearLayout>
+  <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content">
+    <RelativeLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+      <TextView
+          android:text="20"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/textView18"
+          android:layout_marginLeft="5dp"
+          android:paddingLeft="20dp"
+          android:textSize="36sp"
+          android:textColor="#4A4A4A" />
+      <TextView
+          android:text="Apr 2017"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/textView19"
+          android:layout_marginLeft="20dp"
+          android:paddingLeft="60dp"
+          android:paddingTop="8dp"
+          android:textSize="14sp"
+          android:textColor="#4A4A4A" />
+      <TextView
+          android:text="Thrusday"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="20dp"
+          android:paddingLeft="60dp"
+          android:paddingTop="24dp"
+          android:textSize="14sp"
+          android:textColor="#4A4A4A" />
+      <ImageView
+          android:layout_width="30dp"
+          android:layout_height="wrap_content"
+          android:src="@mipmap/arrow"
+          android:layout_marginLeft="150dp"
+          android:paddingTop="10dp"
+          android:maxWidth="20dp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" android:gravity="left">
+      <TextView
+          android:text="27"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="5dp"
+          android:paddingLeft="20dp"
+          android:textSize="36sp"
+          android:textColor="#4A4A4A" />
+      <TextView
+          android:text="Apr 2017"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="20dp"
+          android:paddingLeft="60dp"
+          android:paddingTop="8dp"
+          android:textSize="14sp"
+          android:textColor="#4A4A4A" />
+      <TextView
+          android:text="Thrusday"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="20dp"
+          android:paddingLeft="60dp"
+          android:paddingTop="24dp"
+          android:textSize="14sp"
+          android:textColor="#4A4A4A" />
+      <ImageView
+          android:layout_width="30dp"
+          android:layout_height="wrap_content"
+          android:src="@mipmap/arrow"
+          android:layout_marginLeft="145dp"
+          android:paddingTop="10dp"
+          android:maxWidth="20dp" />
+    </RelativeLayout>
+  </LinearLayout>
+  <LinearLayout
+      android:minWidth="25px"
+      android:minHeight="25px"
+      android:layout_width="fill_parent"
+      android:orientation="horizontal"
+      android:layout_height="wrap_content"
+      android:id="@+id/LinearLayout11">
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@android:color/black"
+        android:gravity="center"
+        android:layout_weight="1" />
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@android:color/black"
+        android:gravity="center"
+        android:layout_weight="1" />
+  </LinearLayout>
+  <RelativeLayout
+      android:minWidth="25px"
+      android:minHeight="25px"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+    <Space
+        android:layout_width="1dp"
+        android:layout_height="20dp" />
+  </RelativeLayout>
+  <RelativeLayout
+      android:minWidth="25px"
+      android:minHeight="25px"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/relativeLayout5">
+    <TextView
+        android:text="Passengers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView28"
+        android:layout_marginLeft="20dp"
+        android:textSize="14sp"
+        android:textColor="#979797"/>
+  </RelativeLayout>
+  <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      android:layout_width="fill_parent"
+      android:layout_height="40dp"        >
+    <RelativeLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"            >
+      <TextView
+          android:text="1"
+          android:textSize="30sp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="20dp"
+          android:textColor="#4A4A4A"/>
+      <TextView
+          android:paddingTop="10dp"
+          android:text="Adults"
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:layout_marginLeft="40dp"
+          android:textSize="14sp"
+          android:textColor="#4A4A4A"/>
+      <ImageView
+          android:layout_width="30dp"
+          android:layout_height="wrap_content"
+          android:src="@mipmap/arrow"
+          android:layout_marginLeft="100dp"
+          android:paddingTop="10dp"
+          android:maxWidth="20dp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+      <TextView
+          android:text="0"
+          android:textSize="30sp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="20dp"
+          android:textColor="#4A4A4A"/>
+      <TextView
+          android:paddingTop="10dp"
+          android:text="Children"
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:layout_marginLeft="40dp"
+          android:textSize="14sp"
+          android:textColor="#4A4A4A"/>
+      <ImageView
+          android:layout_width="30dp"
+          android:layout_height="wrap_content"
+          android:src="@mipmap/arrow"
+          android:layout_marginLeft="100dp"
+          android:paddingTop="10dp"
+          android:maxWidth="20dp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+      <TextView
+          android:text="0"
+          android:textSize="30sp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="20dp"
+          android:textColor="#4A4A4A"/>
+      <TextView
+          android:paddingTop="10dp"
+          android:text="Infants"
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:layout_marginLeft="40dp"
+          android:textSize="14sp"
+          android:textColor="#4A4A4A"/>
+      <ImageView
+          android:layout_width="30dp"
+          android:layout_height="wrap_content"
+          android:src="@mipmap/arrow"
+          android:layout_marginLeft="85dp"
+          android:paddingTop="10dp"
+          android:maxWidth="20dp" />
+    </RelativeLayout>
+  </LinearLayout>
+  <LinearLayout
+      android:minWidth="25px"
+      android:minHeight="25px"
+      android:layout_width="fill_parent"
+      android:orientation="horizontal"
+      android:layout_height="wrap_content"        >
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@android:color/black"
+        android:gravity="center"
+        android:layout_weight="1" />
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@android:color/black"
+        android:gravity="center"
+        android:layout_weight="1" />
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@android:color/black"
+        android:gravity="center"
+        android:layout_weight="1" />
+  </LinearLayout>
+  <RelativeLayout
+      android:minWidth="25px"
+      android:minHeight="25px"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+    <Space
+        android:layout_width="1dp"
+        android:layout_height="20dp" />
+  </RelativeLayout>
+  <RelativeLayout
+      android:minWidth="25px"
+      android:minHeight="25px"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/relativeLayout7">
+    <TextView
+        android:text="Cabin Class"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:textColor="#979797"
+        android:textSize="14sp"/>
+  </RelativeLayout>
+  <RelativeLayout
+      android:minWidth="25px"
+      android:minHeight="25px"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/relativeLayout8">
+    <TextView
+        android:text="Premium Economy Economy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView8"
+        android:paddingLeft="20dp"
+        android:textSize="20sp"
+        android:textColor="#4A4A4A" />
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/arrow"
+        android:layout_marginLeft="325dp"
+        android:paddingTop="10dp"
+        android:maxWidth="20dp" />
+  </RelativeLayout>
+  <RelativeLayout
+      android:minWidth="25px"
+      android:minHeight="25px"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:paddingLeft="20dp"
+      android:paddingRight="20dp">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+    <Space
+        android:layout_width="1dp"
+        android:layout_height="20dp" />
+  </RelativeLayout>
+  <RelativeLayout
+      android:minWidth="25px"
+      android:minHeight="25px"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/relativeLayout9"
+      android:paddingLeft="20dp"
+      android:paddingRight="20dp">
+    <Button
+        android:id="@+id/SearchFlight"
+        android:text="Search Flights"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+  </RelativeLayout>
+</LinearLayout>
