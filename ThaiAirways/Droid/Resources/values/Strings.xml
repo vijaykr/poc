@@ -1,5 +1,16 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="hello">Hello World, Click Me!</string>
-	<string name="app_name">ThaiAirways.Droid</string>
+    <string name="Hello">Hello World, Click Me!</string>
+    <string name="ApplicationName">Thai Airways</string>
+  <string name="BangkokToHongKong">Bangkok to Hong Kong</string>
+  <string name="Depart">Depart</string>
+  <string name="Return">Return</string>
+  <string name="DepartDate">Fri 28 Apr</string>
+  <string name="ReturnDate">------  ----  ------</string>
+  <string name="SelectAFlight">Select a flight</string>
+  <string name="SelectAFlightParagraphText">Prices are for a single traveller and include taxes/fees. Flights are not displayed in neutral order and certain airline fare, schedule or availability info is given preferential treatment in its display.</string>
+  <string name="NumberOfFlights">3</string>
+  <string name="AfterNumberOfFlights">Flights</string>
+  <string name="FamilyFareBenefits"><u>Learn Fare Family Benefits</u></string>
+  
 </resources>

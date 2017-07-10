@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+  <item
+       android:id="@+id/book_flight"
+       android:enabled="true"
+       android:icon="@mipmap/book_flight"
+             app:showAsAction="ifRoom" />
+
+  <item
+      android:id="@+id/timetable"
+      android:enabled="true"
+      android:icon="@mipmap/timetable"
+            app:showAsAction="ifRoom" />
+
+  <item
+      android:id="@+id/flight_status"
+      android:enabled="true"
+      android:icon="@mipmap/flight_status"
+            app:showAsAction="ifRoom" />
+  <item
+    android:id="@+id/my_booking"
+    android:enabled="true"
+    android:icon="@mipmap/my_booking"
+          app:showAsAction="ifRoom" />
+</menu>

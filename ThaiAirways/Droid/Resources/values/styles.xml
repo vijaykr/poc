@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+  <!-- Inherit from the light Material Theme -->
+  <style name="MyCustomTheme" parent="@android:style/Theme.Material.NoActionBar">
+    <!-- Customizations go here -->
+
+    <item name="android:statusBarColor">@color/color_primary_dark</item>
+    <item name="android:windowBackground">@color/white</item>
+    <item name="android:colorPrimary">@android:color/transparent</item>
+    
+    <item name="android:colorPrimaryDark">@color/white</item>
+  </style>
+</resources>
