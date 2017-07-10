@@ -5,7 +5,7 @@ using Android.Views;
 using Android.Support.V7.App;
 using Android.Support.Design.Widget;
 
-namespace ThaiAirways
+namespace ThaiAirways.Droid
 {
     [Activity(Label = "ThaiAirways", MainLauncher = true, Icon = "@drawable/icon", Theme ="@style/Theme.AppCompat.Light.NoActionBar")]
     public class FlightLandingActivity : AppCompatActivity

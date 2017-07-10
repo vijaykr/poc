@@ -11,12 +11,14 @@ using Android.Views;
 using Android.Widget;
 using Android.Support.V7;
 using Android.Support.V7.Widget;
-namespace App2
+using ThaiAirways.Model.Vo;
+
+namespace ThaiAirways.Droid
 {
     class FlightRecyclerAdapter : RecyclerView.Adapter
     {
-        public List<FlightSearch> flights;
-        public FlightRecyclerAdapter(List<FlightSearch> flightsList)
+        public List<FlightSearchEntity> flights;
+        public FlightRecyclerAdapter(List<FlightSearchEntity> flightsList)
         {
             flights = flightsList;
         }

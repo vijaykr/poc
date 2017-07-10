@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -107,131 +107,381 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\top_nav.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\top_nav.imageset\top_nav.png" />
-    <ImageAsset Include="Assets.xcassets\top_nav.imageset\top_nav%402x.png" />
-    <ImageAsset Include="Assets.xcassets\top_nav.imageset\top_nav%403x.png" />
-    <ImageAsset Include="Assets.xcassets\mid_nav.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\mid_nav.imageset\mid_nav.png" />
-    <ImageAsset Include="Assets.xcassets\mid_nav.imageset\mid_nav%402x.png" />
-    <ImageAsset Include="Assets.xcassets\mid_nav.imageset\mid_nav%403x.png" />
-    <ImageAsset Include="Assets.xcassets\book_flight.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\book_flight.imageset\book_flight.png" />
-    <ImageAsset Include="Assets.xcassets\book_flight.imageset\book_flight%402x.png" />
-    <ImageAsset Include="Assets.xcassets\book_flight.imageset\book_flight%403x.png" />
-    <ImageAsset Include="Assets.xcassets\flight_status.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\flight_status.imageset\flight_status.png" />
-    <ImageAsset Include="Assets.xcassets\flight_status.imageset\flight_status%402x.png" />
-    <ImageAsset Include="Assets.xcassets\flight_status.imageset\flight_status%403x.png" />
-    <ImageAsset Include="Assets.xcassets\my_booking.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\my_booking.imageset\my_booking.png" />
-    <ImageAsset Include="Assets.xcassets\my_booking.imageset\my_booking%402x.png" />
-    <ImageAsset Include="Assets.xcassets\my_booking.imageset\my_booking%403x.png" />
-    <ImageAsset Include="Assets.xcassets\timetable.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\timetable.imageset\timetable.png" />
-    <ImageAsset Include="Assets.xcassets\timetable.imageset\timetable%402x.png" />
-    <ImageAsset Include="Assets.xcassets\timetable.imageset\timetable%403x.png" />
-    <ImageAsset Include="Assets.xcassets\nav_line.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\nav_line.imageset\nav_line.png" />
-    <ImageAsset Include="Assets.xcassets\nav_line.imageset\nav_line%402x.png" />
-    <ImageAsset Include="Assets.xcassets\nav_line.imageset\nav_line%403x.png" />
-    <ImageAsset Include="Assets.xcassets\promotion.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\promotion.imageset\promotion.png" />
-    <ImageAsset Include="Assets.xcassets\promotion.imageset\promotion%402x.png" />
-    <ImageAsset Include="Assets.xcassets\promotion.imageset\promotion%403x.png" />
-    <ImageAsset Include="Assets.xcassets\landing.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\landing.imageset\landing.png" />
-    <ImageAsset Include="Assets.xcassets\landing.imageset\landing%402x.png" />
-    <ImageAsset Include="Assets.xcassets\landing.imageset\landing%403x.png" />
-    <ImageAsset Include="Assets.xcassets\placeholder.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\placeholder.imageset\placeholder.png" />
-    <ImageAsset Include="Assets.xcassets\welcome.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\welcome.imageset\welcome.png" />
-    <ImageAsset Include="Assets.xcassets\welcome.imageset\welcome%402x.png" />
-    <ImageAsset Include="Assets.xcassets\welcome.imageset\welcome%403x.png" />
-    <ImageAsset Include="Assets.xcassets\cabin_class_placeholder.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\cabin_class_placeholder.imageset\cabin_class_placeholder.png" />
-    <ImageAsset Include="Assets.xcassets\cabin_class_placeholder.imageset\cabin_class_placeholder%402x.png" />
-    <ImageAsset Include="Assets.xcassets\cabin_class_placeholder.imageset\cabin_class_placeholder%403x.png" />
-    <ImageAsset Include="Assets.xcassets\passenger_placeholder.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\passenger_placeholder.imageset\passenger_placeholder.png" />
-    <ImageAsset Include="Assets.xcassets\passenger_placeholder.imageset\passenger_placeholder%402x.png" />
-    <ImageAsset Include="Assets.xcassets\passenger_placeholder.imageset\passenger_placeholder%403x.png" />
-    <ImageAsset Include="Assets.xcassets\date_placeholder.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\date_placeholder.imageset\date_placeholder.png" />
-    <ImageAsset Include="Assets.xcassets\date_placeholder.imageset\date_placeholder%402x.png" />
-    <ImageAsset Include="Assets.xcassets\date_placeholder.imageset\date_placeholder%403x.png" />
-    <ImageAsset Include="Assets.xcassets\plane.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\plane.imageset\plane.png" />
-    <ImageAsset Include="Assets.xcassets\plane.imageset\plane%402x.png" />
-    <ImageAsset Include="Assets.xcassets\plane.imageset\plane%403x.png" />
-    <ImageAsset Include="Assets.xcassets\round_trip.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\round_trip.imageset\round_trip.png" />
-    <ImageAsset Include="Assets.xcassets\round_trip.imageset\round_trip%402x.png" />
-    <ImageAsset Include="Assets.xcassets\round_trip.imageset\round_trip%403x.png" />
-    <ImageAsset Include="Assets.xcassets\clock.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\clock.imageset\clock.png" />
-    <ImageAsset Include="Assets.xcassets\clock.imageset\clock%402x.png" />
-    <ImageAsset Include="Assets.xcassets\clock.imageset\clock%403x.png" />
-    <ImageAsset Include="Assets.xcassets\back.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\back.imageset\back.png" />
-    <ImageAsset Include="Assets.xcassets\back.imageset\back%402x.png" />
-    <ImageAsset Include="Assets.xcassets\back.imageset\back%403x.png" />
-    <ImageAsset Include="Assets.xcassets\cross.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\cross.imageset\cross.png" />
-    <ImageAsset Include="Assets.xcassets\cross.imageset\cross%402x.png" />
-    <ImageAsset Include="Assets.xcassets\cross.imageset\cross%403x.png" />
-    <ImageAsset Include="Assets.xcassets\time_back.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\time_back.imageset\time_back.png" />
-    <ImageAsset Include="Assets.xcassets\time_back.imageset\time_back%402x.png" />
-    <ImageAsset Include="Assets.xcassets\time_back.imageset\time_back%403x.png" />
-    <ImageAsset Include="Assets.xcassets\flight_list_top_bar.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\flight_list_top_bar.imageset\flight_list_top_bar.png" />
-    <ImageAsset Include="Assets.xcassets\flight_list_top_bar.imageset\flight_list_top_bar%402x.png" />
-    <ImageAsset Include="Assets.xcassets\flight_list_top_bar.imageset\flight_list_top_bar%403x.png" />
-    <ImageAsset Include="Assets.xcassets\global_top_bar.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\global_top_bar.imageset\global_top_bar.png" />
-    <ImageAsset Include="Assets.xcassets\global_top_bar.imageset\global_top_bar%402x.png" />
-    <ImageAsset Include="Assets.xcassets\global_top_bar.imageset\global_top_bar%403x.png" />
-    <ImageAsset Include="Assets.xcassets\pax.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\pax.imageset\pax.png" />
-    <ImageAsset Include="Assets.xcassets\pax.imageset\pax%402x.png" />
-    <ImageAsset Include="Assets.xcassets\pax.imageset\pax%403x.png" />
-    <ImageAsset Include="Assets.xcassets\cabin_class.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\cabin_class.imageset\cabin_class.png" />
-    <ImageAsset Include="Assets.xcassets\cabin_class.imageset\cabin_class%402x.png" />
-    <ImageAsset Include="Assets.xcassets\cabin_class.imageset\cabin_class%403x.png" />
-    <ImageAsset Include="Assets.xcassets\depart.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\depart.imageset\depart.png" />
-    <ImageAsset Include="Assets.xcassets\depart.imageset\depart%402x.png" />
-    <ImageAsset Include="Assets.xcassets\depart.imageset\depart%403x.png" />
-    <ImageAsset Include="Assets.xcassets\filter.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\filter.imageset\fliter.png" />
-    <ImageAsset Include="Assets.xcassets\filter.imageset\fliter%402x.png" />
-    <ImageAsset Include="Assets.xcassets\filter.imageset\fliter%403x.png" />
-    <ImageAsset Include="Assets.xcassets\flight_card.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\flight_card.imageset\flight_card.png" />
-    <ImageAsset Include="Assets.xcassets\flight_card.imageset\flight_card%402x.png" />
-    <ImageAsset Include="Assets.xcassets\flight_card.imageset\flight_card%403x.png" />
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-29x29%402x.png" />
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-29x29%403x.png" />
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-29.png" />
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-80.png" />
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-120.png" />
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-57.png" />
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-114.png" />
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-180.png" />
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-58.png" />
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-40.png" />
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-50.png" />
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-100.png" />
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-72.png" />
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-144.png" />
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-76.png" />
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-152.png" />
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-167.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Contents.json">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\top_nav.imageset\Contents.json">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\top_nav.imageset\top_nav.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\top_nav.imageset\top_nav%402x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\top_nav.imageset\top_nav%403x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\mid_nav.imageset\Contents.json">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\mid_nav.imageset\mid_nav.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\mid_nav.imageset\mid_nav%402x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\mid_nav.imageset\mid_nav%403x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\book_flight.imageset\Contents.json">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\book_flight.imageset\book_flight.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\book_flight.imageset\book_flight%402x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\book_flight.imageset\book_flight%403x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\flight_status.imageset\Contents.json">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\flight_status.imageset\flight_status.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\flight_status.imageset\flight_status%402x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\flight_status.imageset\flight_status%403x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\my_booking.imageset\Contents.json">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\my_booking.imageset\my_booking.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\my_booking.imageset\my_booking%402x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\my_booking.imageset\my_booking%403x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\timetable.imageset\Contents.json">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\timetable.imageset\timetable.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\timetable.imageset\timetable%402x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\timetable.imageset\timetable%403x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\nav_line.imageset\Contents.json">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\nav_line.imageset\nav_line.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\nav_line.imageset\nav_line%402x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\nav_line.imageset\nav_line%403x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\promotion.imageset\Contents.json">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\promotion.imageset\promotion.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\promotion.imageset\promotion%402x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\promotion.imageset\promotion%403x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\landing.imageset\Contents.json">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\landing.imageset\landing.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\landing.imageset\landing%402x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\landing.imageset\landing%403x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\placeholder.imageset\Contents.json">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\placeholder.imageset\placeholder.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\welcome.imageset\Contents.json">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\welcome.imageset\welcome.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\welcome.imageset\welcome%402x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\welcome.imageset\welcome%403x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\cabin_class_placeholder.imageset\Contents.json">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\cabin_class_placeholder.imageset\cabin_class_placeholder.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\cabin_class_placeholder.imageset\cabin_class_placeholder%402x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\cabin_class_placeholder.imageset\cabin_class_placeholder%403x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\passenger_placeholder.imageset\Contents.json">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\passenger_placeholder.imageset\passenger_placeholder.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\passenger_placeholder.imageset\passenger_placeholder%402x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\passenger_placeholder.imageset\passenger_placeholder%403x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\date_placeholder.imageset\Contents.json">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\date_placeholder.imageset\date_placeholder.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\date_placeholder.imageset\date_placeholder%402x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\date_placeholder.imageset\date_placeholder%403x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\plane.imageset\Contents.json">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\plane.imageset\plane.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\plane.imageset\plane%402x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\plane.imageset\plane%403x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\round_trip.imageset\Contents.json">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\round_trip.imageset\round_trip.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\round_trip.imageset\round_trip%402x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\round_trip.imageset\round_trip%403x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\clock.imageset\Contents.json">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\clock.imageset\clock.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\clock.imageset\clock%402x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\clock.imageset\clock%403x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\back.imageset\Contents.json">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\back.imageset\back.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\back.imageset\back%402x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\back.imageset\back%403x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\cross.imageset\Contents.json">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\cross.imageset\cross.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\cross.imageset\cross%402x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\cross.imageset\cross%403x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\time_back.imageset\Contents.json">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\time_back.imageset\time_back.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\time_back.imageset\time_back%402x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\time_back.imageset\time_back%403x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\flight_list_top_bar.imageset\Contents.json">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\flight_list_top_bar.imageset\flight_list_top_bar.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\flight_list_top_bar.imageset\flight_list_top_bar%402x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\flight_list_top_bar.imageset\flight_list_top_bar%403x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\global_top_bar.imageset\Contents.json">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\global_top_bar.imageset\global_top_bar.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\global_top_bar.imageset\global_top_bar%402x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\global_top_bar.imageset\global_top_bar%403x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\pax.imageset\Contents.json">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\pax.imageset\pax.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\pax.imageset\pax%402x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\pax.imageset\pax%403x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\cabin_class.imageset\Contents.json">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\cabin_class.imageset\cabin_class.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\cabin_class.imageset\cabin_class%402x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\cabin_class.imageset\cabin_class%403x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\depart.imageset\Contents.json">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\depart.imageset\depart.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\depart.imageset\depart%402x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\depart.imageset\depart%403x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\filter.imageset\Contents.json">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\filter.imageset\fliter.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\filter.imageset\fliter%402x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\filter.imageset\fliter%403x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\flight_card.imageset\Contents.json">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\flight_card.imageset\flight_card.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\flight_card.imageset\flight_card%402x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\flight_card.imageset\flight_card%403x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-29x29%402x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-29x29%403x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-29.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-80.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-120.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-57.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-114.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-180.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-58.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-40.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-50.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-100.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-72.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-144.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-76.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-152.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-167.png">
+      <InProject>false</InProject>
+    </ImageAsset>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />

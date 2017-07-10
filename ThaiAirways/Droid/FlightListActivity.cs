@@ -8,7 +8,11 @@ using Android.Support.V7;
 using Android.Support.V7.Widget;
 using Android.OS;
 using System.Collections.Generic;
-namespace App2
+using ThaiAirways.Model.Vo;
+using ThaiAirways.Model;
+using ThaiAirways.Utils;
+
+namespace ThaiAirways.Droid
 {
     [Activity(Theme = "@style/MyCustomTheme", MainLauncher = true, Icon = "@drawable/icon")]
     public class FlightListActivity : Activity
@@ -16,14 +20,24 @@ namespace App2
         RecyclerView mRecyclerView;
         RecyclerView.LayoutManager mLayoutManager;
         FlightRecyclerAdapter mAdapter;
-        
+
+        DateTime departDate;
+        DateTime returnDate;
+
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
+            departDate = CrossPlatformUtils.GetDeaprtDate();
+            returnDate = CrossPlatformUtils.GetReturnDate();
+
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.FlightList);
-            List<FlightSearch> flightsData = new List<FlightSearch>();
-            flightsData = GetFlightsData();
+            
+            
+            List<FlightSearchEntity> flightsData = new List<FlightSearchEntity>();
+
+
+            flightsData = FlighSearchModel.Instance.FlightList;
             
             FindViewById<TextView>(Resource.Id.txtNumberOfFlights).Text = flightsData.Count.ToString();
             FindViewById<TextView>(Resource.Id.txtOriginToDestPlaceTop).Text = flightsData[0].DestCode.ToUpper() +" to "+ flightsData[0].ArrCode.ToUpper();
@@ -50,54 +64,52 @@ namespace App2
             mRecyclerView.SetAdapter(mAdapter);
         }
 
-        public List<FlightSearch> GetFlightsData()
-        {
-            List<FlightSearch> flights = new List<FlightSearch>();
-            FlightSearch flight = new FlightSearch();       
+        //public List<FlightSearchEntity> GetFlightsData()
+        //{
+        //    List<FlightSearchEntity> flights = new List<FlightSearchEntity>();
+        //    FlightSearchEntity flight = new FlightSearchEntity();       
+            
 
-           
-
-
-            for (int i = 0; i < 7; i++)
-            {
+        //    for (int i = 0; i < 7; i++)
+        //    {
                 
 
 
-                flight.Duration = "03:10:00";
-                flight.DestCode = "del";
-                flight.ArrCode = "LHR";
-                flight.DepartDate = "2017-07-09T11:15:00";
-                flight.ArrDate = "2017-07-09T14:25:00";
-                flight.EquipmentType = "600";
-                flight.MarketingAirline = "TG";
-                flight.OperatingAirline = "TG";
-                flight.FareInfo = new FareInfo[3];
+        //        flight.Duration = "03:10:00";
+        //        flight.DestCode = "del";
+        //        flight.ArrCode = "LHR";
+        //        flight.DepartDate = "2017-07-09T11:15:00";
+        //        flight.ArrDate = "2017-07-09T14:25:00";
+        //        flight.EquipmentType = "600";
+        //        flight.MarketingAirline = "TG";
+        //        flight.OperatingAirline = "TG";
+        //        flight.FareInfo = new FareInfo[3];
 
 
-                FareInfo finfo1 = new FareInfo();
-                finfo1.ClassType = "ECOPRO" + i.ToString();
-                finfo1.Currency = "USD";
-                finfo1.Amount = "5,200";
-                FareInfo finfo2 = new FareInfo();
-                finfo2.ClassType = "ECOPRO" + (i + 1).ToString();
-                finfo2.Currency = "USD";
-                finfo2.Amount = "5,200";
-                FareInfo finfo3 = new FareInfo();
-                finfo3.ClassType = "ECOPRO" + (i + 2).ToString(); ;
-                finfo3.Currency = "USD";
-                finfo3.Amount = "5,200";
+        //        FareInfo finfo1 = new FareInfo();
+        //        finfo1.ClassType = "ECOPRO" + i.ToString();
+        //        finfo1.Currency = "USD";
+        //        finfo1.Amount = "5,200";
+        //        FareInfo finfo2 = new FareInfo();
+        //        finfo2.ClassType = "ECOPRO" + (i + 1).ToString();
+        //        finfo2.Currency = "USD";
+        //        finfo2.Amount = "5,200";
+        //        FareInfo finfo3 = new FareInfo();
+        //        finfo3.ClassType = "ECOPRO" + (i + 2).ToString(); ;
+        //        finfo3.Currency = "USD";
+        //        finfo3.Amount = "5,200";
                 
              
-                flight.FareInfo[0] = finfo1;
-                flight.FareInfo[1] = finfo2;
-                flight.FareInfo[2] = finfo3;
+        //        flight.FareInfo[0] = finfo1;
+        //        flight.FareInfo[1] = finfo2;
+        //        flight.FareInfo[2] = finfo3;
 
-                flights.Add(flight);
-            }
+        //        flights.Add(flight);
+        //    }
 
            
-            return flights;
-        } 
+        //    return flights;
+        //} 
     }
     
 }
