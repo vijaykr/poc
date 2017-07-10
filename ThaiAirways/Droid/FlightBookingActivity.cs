@@ -14,7 +14,7 @@ using ThaiAirways.Utils;
 
 namespace ThaiAirways.Droid
 {
-  
+
     [Activity(Theme = "@android:style/Theme.Material.Light", Label = "BookFlight", MainLauncher = false)]
     public class FlightBookingActivity : Activity
     {
@@ -26,22 +26,36 @@ namespace ThaiAirways.Droid
         {
             RequestWindowFeature(WindowFeatures.NoTitle);
 
-
             base.OnCreate(bundle);
             SetContentView(Resource.Layout.FlightBooking);
 
             departDate = CrossPlatformUtils.GetDeaprtDate();
             returnDate = CrossPlatformUtils.GetReturnDate();
 
-            FlighSearchModel.Instance.GetFlightDetails(1, 0, 0, "ECONOMY", departDate, "BKK", 0, returnDate, "HKG", "en-US", "USD");
+            TextView tvDepartDD= FindViewById <TextView>(Resource.Id.tvDepartDD);
+            TextView tvDepartMon = FindViewById<TextView>(Resource.Id.tvDepartMon);
+            TextView tvDepartDay = FindViewById<TextView>(Resource.Id.tvDepartDay);
+            TextView tvReturnDD = FindViewById<TextView>(Resource.Id.tvReturnDD);
+            TextView tvReturnMonth = FindViewById<TextView>(Resource.Id.tvReturnMonth);
+            TextView tvReturnDay = FindViewById<TextView>(Resource.Id.tvReturnDay);
+
+            tvDepartDD.Text = departDate.Date.ToString();
+            tvDepartMon.Text = departDate.Month.ToString();
+            tvDepartDay.Text = departDate.Day.ToString();
+
+            tvReturnDD.Text = returnDate.Date.ToString();
+            tvReturnMonth.Text = returnDate.Month.ToString();
+            tvReturnDay.Text = returnDate.Day.ToString();
+
+            Button buttonSearchFlight = FindViewById<Button>(Resource.Id.SearchFlight);
+            buttonSearchFlight.Click += btn_SearchFlightClick;
 
             StartActivity(typeof(FlightListActivity));
         }
 
-
-        public void getData()
+        void btn_SearchFlightClick(object sender, EventArgs e)
         {
-
+            FlighSearchModel.Instance.GetFlightDetails(1, 0, 0, "ECONOMY", departDate, "BKK", 0, returnDate, "HKG", "en-US", "USD");
         }
     }
 }
