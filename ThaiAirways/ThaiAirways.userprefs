@@ -1,15 +1,8 @@
-﻿<Properties StartupConfiguration="{D0281075-69D6-4611-8B9E-7624C4FC6830}|Default" NuGet.AddPackagesDialog.IncludePrerelease="True">
+﻿<Properties StartupConfiguration="{D0281075-69D6-4611-8B9E-7624C4FC6830}|Default">
   <MonoDevelop.Ide.ItemProperties.ThaiAirways.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.7F9C0FAA-A312-4032-964A-83F8F219F22D" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="iOS/Main.storyboard">
+  <MonoDevelop.Ide.Workbench ActiveDocument="iOS/ViewController.cs">
     <Files>
-      <File FileName="iOS/ViewController.cs" Line="34" Column="15" />
-      <File FileName="ThaiAirways/Model/FlighSearchModel.cs" Line="97" Column="77" />
-      <File FileName="iOS/BookFlightViewController.cs" Line="32" Column="1" />
-      <File FileName="iOS/FlightListViewController.cs" Line="37" Column="13" />
-      <File FileName="iOS/View/FlightListTableViewSource.cs" Line="55" Column="1" />
-      <File FileName="iOS/View/FlightCardViewCell.cs" Line="38" Column="45" />
-      <File FileName="ThaiAirways/Utils/CrossPlatformUtils.cs" Line="29" Column="1" />
-      <File FileName="iOS/Main.storyboard" />
+      <File FileName="iOS/ViewController.cs" Line="98" Column="4" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
