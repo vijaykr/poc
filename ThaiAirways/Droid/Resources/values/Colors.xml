@@ -8,6 +8,11 @@
   <color name="purple">#CC0099</color>
   <color name="voilet">#260053</color>
   <color name="lightGray">#F4F2F7</color>
-  
+    <color name="my_blue">#3498DB</color>
+  <color name="colorRed">#77D065</color>
+  <color name="my_purple">#B455B6</color>
+  <color name="colorGray">#738182</color>
+  <color name="colorwhite">#FFFFFF</color>
+  <color name="colorpurple">#330066</color>
 
 </resources>
