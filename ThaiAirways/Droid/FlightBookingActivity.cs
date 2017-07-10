@@ -31,7 +31,7 @@ namespace ThaiAirways.Droid
 
             departDate = CrossPlatformUtils.GetDeaprtDate();
             returnDate = CrossPlatformUtils.GetReturnDate();
-
+          
             TextView tvDepartDD= FindViewById <TextView>(Resource.Id.tvDepartDD);
             TextView tvDepartMon = FindViewById<TextView>(Resource.Id.tvDepartMon);
             TextView tvDepartDay = FindViewById<TextView>(Resource.Id.tvDepartDay);
@@ -39,23 +39,27 @@ namespace ThaiAirways.Droid
             TextView tvReturnMonth = FindViewById<TextView>(Resource.Id.tvReturnMonth);
             TextView tvReturnDay = FindViewById<TextView>(Resource.Id.tvReturnDay);
 
-            tvDepartDD.Text = departDate.Date.ToString();
-            tvDepartMon.Text = departDate.Month.ToString();
-            tvDepartDay.Text = departDate.Day.ToString();
+            tvDepartDD.Text = departDate.Day.ToString();
+            tvDepartMon.Text = departDate.ToString("MMM yyyy");
+            tvDepartDay.Text = departDate.DayOfWeek.ToString();
 
-            tvReturnDD.Text = returnDate.Date.ToString();
-            tvReturnMonth.Text = returnDate.Month.ToString();
-            tvReturnDay.Text = returnDate.Day.ToString();
+            tvReturnDD.Text = returnDate.Day.ToString();
+            tvReturnMonth.Text = returnDate.ToString("MMM yyyy");
+            tvReturnDay.Text = returnDate.DayOfWeek.ToString();
 
             Button buttonSearchFlight = FindViewById<Button>(Resource.Id.SearchFlight);
             buttonSearchFlight.Click += btn_SearchFlightClick;
 
-            StartActivity(typeof(FlightListActivity));
+            ImageView Backbutton = FindViewById<ImageView>(Resource.Id.imageView1);
+            Backbutton.Click += delegate {
+                Finish();
+            };
         }
 
         void btn_SearchFlightClick(object sender, EventArgs e)
-        {
+        {            
             FlighSearchModel.Instance.GetFlightDetails(1, 0, 0, "ECONOMY", departDate, "BKK", 0, returnDate, "HKG", "en-US", "USD");
+            StartActivity(typeof(FlightListActivity));
         }
     }
 }

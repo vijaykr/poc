@@ -12,6 +12,7 @@ using Android.Widget;
 using Android.Support.V7;
 using Android.Support.V7.Widget;
 using ThaiAirways.Model.Vo;
+using ThaiAirways.Utils;
 
 namespace ThaiAirways.Droid
 {
@@ -38,29 +39,31 @@ namespace ThaiAirways.Droid
             FlightViewHolder vh = holder as FlightViewHolder;
             vh.FlightNumber.Text = flights[position].MarketingAirline + " " + flights[position].EquipmentType;
 
-            vh.OperatedBy.Text = "Operated by " + flights[position].OperatingAirline;
-            vh.DepartureTime.Text = Convert.ToDateTime(flights[position].DepartDate).Hour.ToString()+":"+ Convert.ToDateTime(flights[position].DepartDate).Minute.ToString();
+            vh.OperatedBy.Text = "Operated by " + CrossPlatformUtils.GetAirlineNameByCode(flights[position].OperatingAirline);
+          //  vh.DepartureTime.Text = Convert.ToDateTime(flights[position].DepartDate).Hour.ToString()+":"+ Convert.ToDateTime(flights[position].DepartDate).Minute.ToString();
             vh.DeparturePlace.Text = flights[position].DestCode.ToUpper();
 
-            if(flights[position].Duration.LastIndexOf(":")>4)
-                vh.Duration.Text = flights[position].Duration.Substring(0,5);
-            else
-                vh.Duration.Text = flights[position].Duration;
+            vh.DepartureTime.Text = CrossPlatformUtils.GetTimeFromDate(flights[position].DepartDate);
 
-            vh.ArrivalTime.Text = Convert.ToDateTime(flights[position].ArrDate).Hour.ToString() + ":" + Convert.ToDateTime(flights[position].ArrDate).Minute.ToString();
+            vh.Duration.Text = CrossPlatformUtils.GetDurationFormat(flights[position].Duration);
+
+
+            vh.ArrivalTime.Text = CrossPlatformUtils.GetTimeFromDate(flights[position].ArrDate);
             vh.ArrivalPlace.Text = flights[position].ArrCode.ToUpper();
-           
 
+            vh.Amount1.Text = flights[position].FareInfo[0].Amount;
             vh.Class1.Text = flights[position].FareInfo[0].ClassType;
-            vh.Class2.Text = flights[position].FareInfo[1].ClassType;
-            vh.Class3.Text = flights[position].FareInfo[2].ClassType;
             vh.CurrencyCode1.Text = flights[position].FareInfo[0].Currency;
+
+            /*
+            vh.Class2.Text = flights[position].FareInfo[1].ClassType;
+            vh.Amount2.Text = flights[position].FareInfo[1].Amount;
             vh.CurrencyCode2.Text = flights[position].FareInfo[1].Currency;
             vh.CurrencyCode3.Text = flights[position].FareInfo[2].Currency;
-            vh.Amount1.Text = flights[position].FareInfo[0].Amount;
-            vh.Amount2.Text = flights[position].FareInfo[1].Amount;
+            vh.Class3.Text = flights[position].FareInfo[2].ClassType;
+           
             vh.Amount3.Text = flights[position].FareInfo[2].Amount;
-
+            */
         }
 
         public override int ItemCount

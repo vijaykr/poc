@@ -14,7 +14,7 @@ using ThaiAirways.Utils;
 
 namespace ThaiAirways.Droid
 {
-    [Activity(Theme = "@style/MyCustomTheme", MainLauncher = true, Icon = "@drawable/icon")]
+    [Activity(Theme = "@style/MyCustomTheme", MainLauncher = false, Icon = "@drawable/icon")]
     public class FlightListActivity : Activity
     {
         RecyclerView mRecyclerView;
@@ -39,9 +39,11 @@ namespace ThaiAirways.Droid
 
             flightsData = FlighSearchModel.Instance.FlightList;
             
-            FindViewById<TextView>(Resource.Id.txtNumberOfFlights).Text = flightsData.Count.ToString();
-            FindViewById<TextView>(Resource.Id.txtOriginToDestPlaceTop).Text = flightsData[0].DestCode.ToUpper() +" to "+ flightsData[0].ArrCode.ToUpper();
 
+           
+            FindViewById<TextView>(Resource.Id.txtNumberOfFlights).Text = flightsData.Count.ToString();
+            // FindViewById<TextView>(Resource.Id.txtOriginToDestPlaceTop).Text = flightsData[0].DestCode.ToUpper() +" to "+ flightsData[0].ArrCode.ToUpper();
+            FindViewById<TextView>(Resource.Id.txtOriginToDestPlaceTop).Text = "Bangkok to Hong Kong";
             FindViewById<TextView>(Resource.Id.txtDepDateTop).Text = Convert.ToDateTime( flightsData[0].DepartDate).ToString("ddd")+" "+ Convert.ToDateTime(flightsData[0].DepartDate).Day+" "+ Convert.ToDateTime(flightsData[0].DepartDate).ToString("MMM");
 
 
