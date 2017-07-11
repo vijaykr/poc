@@ -21,12 +21,14 @@ namespace ThaiAirways.Droid
         DateTime departDate;
         DateTime returnDate;
 
+        Android.App.ProgressDialog progress;
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
             RequestWindowFeature(WindowFeatures.NoTitle);
-
+            
             base.OnCreate(savedInstanceState);
-            SetContentView(Resource.Layout.FlightBooking);
+            SetContentView(Resource.Layout.FlightBooking);            
 
             departDate = CrossPlatformUtils.GetDeaprtDate();
             returnDate = CrossPlatformUtils.GetReturnDate();
@@ -57,9 +59,13 @@ namespace ThaiAirways.Droid
 
         void btn_SearchFlightClick(object sender, EventArgs e)
         {
-            ProgressBar progressBar = FindViewById<ProgressBar>(Resource.Id.progressbar1);
-            progressBar.Visibility = ViewStates.Visible;
-
+            progress = new Android.App.ProgressDialog(this);
+            progress.Indeterminate = true;
+            progress.SetProgressStyle(Android.App.ProgressDialogStyle.Spinner);
+            progress.SetMessage("Searching flight... Please wait...");
+            progress.SetCancelable(false);
+            progress.Show();
+            
             FlighSearchModel.Instance.GetFlightDetails(1, 0, 0, "ECONOMY", departDate, "BKK", 0, returnDate, "HKG", "en-US", "USD");
             StartActivity(typeof(FlightListActivity));
         }
