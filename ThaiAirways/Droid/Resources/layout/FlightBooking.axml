@@ -45,13 +45,14 @@
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="One way"
+            android:text=""
             android:layout_weight="1"
             android:gravity="center"
             android:textColor="#330066"
             android:textSize="18sp" />
     </LinearLayout>
     <RelativeLayout
+		android:layout_marginTop="5dp"
         android:minWidth="25px"
         android:minHeight="25px"
         android:layout_width="match_parent"
@@ -116,7 +117,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1" 
-            android:layout_marginLeft="5dp"            
+            android:layout_marginLeft="10dp"
             android:gravity="center"
             android:textColor="#4A4A4A"
             android:textSize="56sp" />
@@ -134,7 +135,8 @@
             android:layout_weight="1"
             android:gravity="center"
             android:textColor="#4A4A4A"
-            android:textSize="56sp" android:layout_marginRight="5dp"            />
+            android:textSize="56sp" 
+		    android:layout_marginRight="10dp"/>
       
     </LinearLayout>
     <LinearLayout
@@ -501,20 +503,21 @@
             android:paddingTop="10dp"
             android:maxWidth="20dp" />
     </RelativeLayout>
+	
     <RelativeLayout
         android:minWidth="25px"
         android:minHeight="25px"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingLeft="20dp"
-        android:paddingRight="20dp">
+        android:paddingRight="20dp" android:layout_marginTop="10dp">
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:background="@android:color/black" />
         <Space
             android:layout_width="1dp"
-            android:layout_height="20dp" />
+            android:layout_height="30dp" />
     </RelativeLayout>
     <RelativeLayout
         android:minWidth="25px"
