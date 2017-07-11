@@ -10,7 +10,6 @@ namespace ThaiAirways.iOS.View
 
 		private List<FlightSearchEntity> flightList;
 		int itemSection = 1;
-		int itemCount = 3;
 
 		public static readonly int ViewHeight = 350;
 

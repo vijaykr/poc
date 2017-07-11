@@ -155,7 +155,8 @@
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
         android:layout_alignParentBottom="true"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:background="#979797">
         <ImageView
             android:src="@mipmap/nav_line"
             android:layout_width="match_parent"
@@ -165,7 +166,9 @@
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
             android:orientation="horizontal"
-            android:paddingTop="10dp" android:paddingBottom="10dp">
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:background="@color/colorwhite">
             <ImageButton
                 android:src="@mipmap/book_flight"
                 android:layout_width="match_parent"
