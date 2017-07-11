@@ -4,8 +4,8 @@
     android:layout_width="fill_parent"
     android:background="@drawable/border"
     android:padding="@dimen/padding_1"
-    android:layout_marginTop="@dimen/padding_15"
     android:layout_marginLeft="@dimen/padding_15"
+    android:layout_marginBottom="@dimen/padding_15"
     android:layout_marginRight="@dimen/padding_15"
     android:layout_height="wrap_content"
     android:orientation="vertical">
@@ -78,6 +78,7 @@
             android:src="@mipmap/yellow_left"
             android:layout_width="20dp"
             android:layout_weight="0.1"
+            android:layout_marginTop="@dimen/padding_2"
             android:layout_gravity="center_vertical"
             android:layout_height="10dp"
             android:id="@+id/imageView2" />
@@ -96,6 +97,7 @@
             android:layout_width="20dp"
             android:layout_gravity="center_vertical"
             android:layout_weight="0.1"
+            android:layout_marginTop="@dimen/padding_2"
             android:layout_height="10dp"
             android:id="@+id/imageView3" />
         <TextView
@@ -145,10 +147,11 @@
             android:layout_marginRight="@dimen/padding_5"
             android:layout_weight="1"
             android:gravity="right"
-            android:textSize="@dimen/medium_font_size"
-            android:textColor="@color/voilet"
+            android:textSize="@dimen/small_font_size"
+            android:textColor="@color/purple"
             android:layout_height="wrap_content"
-            android:text="---" />
+            android:text=""
+            android:layout_marginTop="-4dp" />
         <TextView
             android:id="@+id/txtAmount1"
             android:layout_width="wrap_content"
@@ -156,8 +159,8 @@
             android:layout_marginRight="@dimen/padding_5"
             android:gravity="right"
             android:layout_weight="0.2"
-            android:textSize="@dimen/medium_font_size"
-            android:textColor="@color/voilet"
+            android:textSize="@dimen/large_font_size"
+            android:textColor="@color/purple"
             android:layout_height="wrap_content"
             android:text="---" />
     </LinearLayout>
@@ -197,12 +200,14 @@
             android:layout_width="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_marginRight="@dimen/padding_5"
+            android:layout_marginBottom="@dimen/padding_2"
             android:layout_weight="1"
             android:gravity="right"
-            android:textSize="@dimen/medium_font_size"
-            android:textColor="@color/voilet"
+            android:textSize="@dimen/small_font_size"
+            android:textColor="@color/purple"
             android:layout_height="wrap_content"
-            android:text="---" />
+            android:layout_marginTop="-4dp"
+            android:text="" />
         <TextView
             android:id="@+id/txtAmount2"
             android:layout_width="wrap_content"
@@ -210,8 +215,9 @@
             android:layout_marginRight="@dimen/padding_5"
             android:gravity="right"
             android:layout_weight="0.2"
-            android:textSize="@dimen/medium_font_size"
-            android:textColor="@color/voilet"
+            android:layout_marginTop="-5dp"
+            android:textSize="@dimen/large_font_size"
+            android:textColor="@color/purple"
             android:layout_height="wrap_content"
             android:text="---" />
     </LinearLayout>
@@ -251,12 +257,14 @@
             android:layout_width="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_marginRight="@dimen/padding_5"
+            android:layout_marginBottom="@dimen/padding_2"
             android:layout_weight="1"
             android:gravity="right"
-            android:textSize="@dimen/medium_font_size"
-            android:textColor="@color/voilet"
+            android:textSize="@dimen/small_font_size"
+            android:textColor="@color/purple"
             android:layout_height="wrap_content"
-            android:text="---" />
+            android:layout_marginTop="-4dp"
+            android:text="" />
         <TextView
             android:id="@+id/txtAmount3"
             android:layout_width="wrap_content"
@@ -264,9 +272,10 @@
             android:layout_marginRight="@dimen/padding_5"
             android:gravity="right"
             android:layout_weight="0.2"
-            android:textSize="@dimen/medium_font_size"
-            android:textColor="@color/voilet"
+            android:textSize="@dimen/large_font_size"
+            android:textColor="@color/purple"
             android:layout_height="wrap_content"
+            android:layout_marginTop="-5dp"
             android:text="---" />
     </LinearLayout>
 </LinearLayout>
