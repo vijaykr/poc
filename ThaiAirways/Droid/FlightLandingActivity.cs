@@ -14,6 +14,7 @@ using Square.Picasso;
 using Android.Support.Design.Internal;
 using Android.Util;
 
+
 namespace ThaiAirways.Droid
 {
     [Activity(Label = "ThaiAirways", MainLauncher = true, Icon = "@drawable/icon", Theme = "@style/Theme.AppCompat.Light.NoActionBar")]
@@ -37,6 +38,11 @@ namespace ThaiAirways.Droid
             currentDate = CrossPlatformUtils.TodayDate();
             TextView currentdateview = FindViewById<TextView>(Resource.Id.textView8);
             currentdateview.Text = currentDate;
+
+            ImageButton imagebuttonview = FindViewById<ImageButton>(Resource.Id.imageButton1);
+            imagebuttonview.Click += delegate {
+                StartActivity(typeof(FlightBookingActivity));
+            };
 
             if (CrossConnectivity.Current.IsConnected)
             {
@@ -75,33 +81,33 @@ namespace ThaiAirways.Droid
             }
 
 
-            bottomNavigaion = FindViewById<BottomNavigationView>(Resource.Id.bottom_navigation_view);
-            bottomNavigaion.NavigationItemSelected += (s, e) =>
-            {
-                switch (e.Item.ItemId)
-                {
-                    case Resource.Id.book_flight:
-                        StartActivity(typeof(FlightBookingActivity));
-                        break;
+            //bottomNavigaion = FindViewById<BottomNavigationView>(Resource.Id.bottom_navigation_view);
+            //bottomNavigaion.NavigationItemSelected += (s, e) =>
+            //{
+            //    switch (e.Item.ItemId)
+            //    {
+            //        case Resource.Id.book_flight:
+            //            StartActivity(typeof(FlightBookingActivity));
+            //            break;
 
-                    case Resource.Id.timetable:
+            //        case Resource.Id.timetable:
 
-                        Toast.MakeText(this, "Timetable Clicked", ToastLength.Short).Show();
-                        break;
+            //            Toast.MakeText(this, "Timetable Clicked", ToastLength.Short).Show();
+            //            break;
 
-                    case Resource.Id.flight_status:
+            //        case Resource.Id.flight_status:
 
-                        Toast.MakeText(this, "Flight Status Clicked", ToastLength.Short).Show();
-                        break;
+            //            Toast.MakeText(this, "Flight Status Clicked", ToastLength.Short).Show();
+            //            break;
 
-                    case Resource.Id.my_booking:
+            //        case Resource.Id.my_booking:
 
-                        Toast.MakeText(this, "My Booking Clicked", ToastLength.Short).Show();
-                        break;
-                }
+            //            Toast.MakeText(this, "My Booking Clicked", ToastLength.Short).Show();
+            //            break;
+            //    }
 
-            };
-            SetIconSize();
+            //};
+            //SetIconSize();
 
         }
 
@@ -113,8 +119,7 @@ namespace ThaiAirways.Droid
             for (int i = 0; i < menuView.ChildCount; i++)
             {
 
-                BottomNavigationItemView item = (BottomNavigationItemView)menuView.GetChildAt(i);
-                item.SetShiftingMode(false);
+
 
                 TextView smallText = (TextView)menuView.GetChildAt(i).FindViewById(Resource.Id.smallLabel);
                 smallText.Visibility = ViewStates.Gone;
@@ -125,7 +130,7 @@ namespace ThaiAirways.Droid
                 var dsm = Resources.DisplayMetrics;
 
                 prm.Height = (int)TypedValue.ApplyDimension(ComplexUnitType.Dip, 50, dsm);
-                prm.Width = (int)TypedValue.ApplyDimension(ComplexUnitType.Dip, 50, dsm);
+                prm.Width = (int)TypedValue.ApplyDimension(ComplexUnitType.Dip, 80, dsm);
 
                 icon.LayoutParameters = prm;
                 //Implement Accessibility
@@ -145,6 +150,9 @@ namespace ThaiAirways.Droid
                 {
                     icon.ContentDescription = GetString(Resource.String.MyBooking);
                 }
+
+                BottomNavigationItemView item = (BottomNavigationItemView)menuView.GetChildAt(i);
+                item.SetShiftingMode(false);
             }
         }
     }
