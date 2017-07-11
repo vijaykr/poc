@@ -109,6 +109,7 @@
     <Compile Include="FlightLandingActivity.cs" />
     <Compile Include="FlightListActivity.cs" />
     <Compile Include="FlightRecyclerAdapter.cs" />
+    <Compile Include="TALandingActivity.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SplashActivity.cs" />
@@ -119,9 +120,10 @@
     <None Include="Properties\AndroidManifest.xml" />
     <None Include="Assets\AboutAssets.txt" />
     <AndroidResource Include="Resources\layout\FlightRow.axml" />
-    <AndroidResource Include="Resources\layout\FlightBooking.axml" />
+    <AndroidResource Include="Resources\layout\FlightBooking.axml" />     
     <AndroidResource Include="Resources\layout\FlightLanding.axml" />
-    <AndroidResource Include="Resources\layout\FlightList.axml" />
+    <AndroidResource Include="Resources\layout\FlightList.axml" />      
+    <AndroidResource Include="Resources\layout\TALanding.axml" />      
     <None Include="ThaiAirways.Droid.csproj.bak" />
     <AndroidResource Include="Resources\layout\Splash.axml" />
     <AndroidResource Include="Resources\drawable\landing.png" />
@@ -209,6 +211,9 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\border.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\mipmap-hdpi\landing.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
