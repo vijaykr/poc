@@ -12,14 +12,14 @@
         android:layout_height="72dp"
         android:id="@+id/relativeLayout1"
         android:background="@mipmap/thai_pattern_bg">
-        <ImageView
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:src="@mipmap/fill"
-            android:id="@+id/imageView1"
-            android:paddingTop="20dp"
-            android:paddingLeft="10dp"
-            android:maxWidth="20dp" />
+      <ImageView
+          android:layout_width="35dp"
+          android:layout_height="40dp"
+          android:src="@mipmap/fill"
+          android:id="@+id/imageView1"
+          android:paddingTop="20dp"
+          android:paddingLeft="20dp"
+          android:maxWidth="20dp" />
         <TextView
             android:text="Book a trip"
             android:layout_width="match_parent"
