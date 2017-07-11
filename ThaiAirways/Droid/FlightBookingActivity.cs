@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
+using System.Threading.Tasks;
 using Android.App;
 using Android.Content;
 using Android.OS;
@@ -59,15 +59,60 @@ namespace ThaiAirways.Droid
 
         void btn_SearchFlightClick(object sender, EventArgs e)
         {
-            progress = new Android.App.ProgressDialog(this);
-            progress.Indeterminate = true;
-            progress.SetProgressStyle(Android.App.ProgressDialogStyle.Spinner);
-            progress.SetMessage("Searching flight... Please wait...");
-            progress.SetCancelable(false);
-            progress.Show();
-            
-            FlighSearchModel.Instance.GetFlightDetails(1, 0, 0, "ECONOMY", departDate, "BKK", 0, returnDate, "HKG", "en-US", "USD");
-            StartActivity(typeof(FlightListActivity));
+
+            RunOnUiThread(() =>
+			{
+				ShowLoader(true);
+			});
+
+			Task.Run(() =>
+			{
+				
+                FlighSearchModel.Instance.GetFlightDetails(1, 0, 0, "ECONOMY", departDate, "BKK", 0, returnDate, "HKG", "en-US", "USD");
+
+				RunOnUiThread(() =>
+				{
+					ShowLoader(false);
+					StartActivity(typeof(FlightListActivity));
+				});
+			});
+           
         }
-    }
+
+
+		/// <summary>
+		/// BusyIndicator.
+		/// </summary>
+		public void CreateBusyIndicator()
+		{
+			progress = new ProgressDialog(this);
+			progress.SetProgressStyle(ProgressDialogStyle.Spinner);
+			progress.SetMessage("Just a moment...");
+			progress.SetCancelable(false);
+		}
+
+		/// <summary>
+		/// Show Loader
+		/// </summary>
+		/// <param name="isBusy">isBusy indicater, either true or false as input parameter.</param>
+		public void ShowLoader(bool isBusy)
+		{
+			if (progress == null)
+			{
+				CreateBusyIndicator();
+			}
+
+			progress.Indeterminate = isBusy;
+			if (isBusy)
+			{
+				progress.Show();
+			}
+			else
+			{
+				progress.Hide();
+			}
+		}
+
+
+	}
 }
