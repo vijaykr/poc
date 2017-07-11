@@ -155,6 +155,9 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
+                 android:paddingLeft="@dimen/padding_10"
+            android:paddingRight="@dimen/padding_10"
+                android:scaleType="centerCrop" 
                 android:src="@mipmap/fliter" />
         </LinearLayout>
         <LinearLayout
@@ -193,13 +196,12 @@
                 android:layout_height="wrap_content"
                 android:text="@string/FamilyFareBenefits" />
         </LinearLayout>
-      
-       <android.support.v7.widget.RecyclerView
-        android:id="@+id/recyclerView"
-        android:scrollbars="vertical"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent" />
-      
-        
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:scrollbars="vertical"
+            android:paddingTop="@dimen/padding_20"
+            android:paddingBottom="@dimen/padding_20"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
     </LinearLayout>
 </RelativeLayout>
