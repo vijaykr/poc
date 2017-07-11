@@ -39,7 +39,7 @@ namespace ThaiAirways.iOS.View
 		/// <param name="section">Section.</param>
 		public override nint RowsInSection(UITableView tableview, nint section)
 		{
-            return flightList.Count;
+            return flightList.Count + 1;
 		}
 
         /// <summary>
@@ -50,14 +50,24 @@ namespace ThaiAirways.iOS.View
         /// <param name="indexPath">Index path.</param>
         public override UITableViewCell GetCell(UITableView tableView, Foundation.NSIndexPath indexPath)
         {
-            FlightCardViewCell detailsCell = tableView.DequeueReusableCell("FlightCardViewCell", indexPath) as FlightCardViewCell;
-            detailsCell.initCell(flightList.ToArray()[indexPath.Row]);
+            if(indexPath.Row == 0)
+            {
+				FlgihtHeaderViewCell headerCell = tableView.DequeueReusableCell("FlgihtHeaderViewCell", indexPath) as FlgihtHeaderViewCell;
+                return headerCell;
+			}
+
+			FlightCardViewCell detailsCell = tableView.DequeueReusableCell("FlightCardViewCell", indexPath) as FlightCardViewCell;
+			detailsCell.initCell(flightList.ToArray()[indexPath.Row]);
 			return detailsCell;
 		}
 
         public override nfloat GetHeightForRow(UITableView tableView, Foundation.NSIndexPath indexPath)
         {
-            //return base.GetHeightForRow(tableView, indexPath);
+            if(indexPath.Row == 0)
+            {
+                return 150;    
+            }
+
             return 208;
         }
 

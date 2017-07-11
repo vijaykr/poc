@@ -488,6 +488,10 @@
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-167.png">
       <InProject>false</InProject>
     </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\one_way.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\one_way.imageset\one_way.png" />
+    <ImageAsset Include="Assets.xcassets\one_way.imageset\one_way%402x.png" />
+    <ImageAsset Include="Assets.xcassets\one_way.imageset\one_way%403x.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
@@ -519,12 +523,14 @@
     <Folder Include="Assets.xcassets\depart.imageset\" />
     <Folder Include="Assets.xcassets\filter.imageset\" />
     <Folder Include="Assets.xcassets\flight_card.imageset\" />
+    <Folder Include="Assets.xcassets\one_way.imageset\" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
     <InterfaceDefinition Include="Main.storyboard" />
     <InterfaceDefinition Include="View\TopNavigationView.xib" />
     <InterfaceDefinition Include="View\FlightCardViewCell.xib" />
+    <InterfaceDefinition Include="View\FlgihtHeaderViewCell.xib" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
@@ -559,6 +565,10 @@
       <DependentUpon>FlightCardViewCell.cs</DependentUpon>
     </Compile>
     <Compile Include="View\FlightListTableViewSource.cs" />
+    <Compile Include="View\FlgihtHeaderViewCell.cs" />
+    <Compile Include="View\FlgihtHeaderViewCell.designer.cs">
+      <DependentUpon>FlgihtHeaderViewCell.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" />

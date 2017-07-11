@@ -62,11 +62,17 @@ namespace ThaiAirways.Utils
 
 		public static string GetDurationFormat(string duration)
 		{
-            var arr = duration.Split(':');
-            int hour = Convert.ToInt16(arr[0]);
-            int minute = Convert.ToInt16(arr[1]);
 
-            return hour + "h " + minute + "m";
+            if(duration != "")
+            {
+				var arr = duration.Split(':');
+				int hour = Convert.ToInt16(arr[0]);
+				int minute = Convert.ToInt16(arr[1]);
+
+				return hour + "h " + minute + "m";
+			}
+
+            return "";
 		}
 
 		public static string GetAirlineNameByCode(string code)
