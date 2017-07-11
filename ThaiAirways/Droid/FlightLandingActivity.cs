@@ -13,7 +13,7 @@ using Plugin.Connectivity;
 using Square.Picasso;
 using Android.Support.Design.Internal;
 using Android.Util;
-
+using Android.Graphics;
 
 namespace ThaiAirways.Droid
 {
@@ -41,6 +41,7 @@ namespace ThaiAirways.Droid
 
             ImageButton imagebuttonview = FindViewById<ImageButton>(Resource.Id.imageButton1);
             imagebuttonview.Click += delegate {
+                imagebuttonview.SetColorFilter(Color.Argb(255, 51, 0, 102));
                 StartActivity(typeof(FlightBookingActivity));
             };
 
