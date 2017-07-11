@@ -56,7 +56,10 @@ namespace ThaiAirways.Droid
         }
 
         void btn_SearchFlightClick(object sender, EventArgs e)
-        {            
+        {
+            ProgressBar progressBar = FindViewById<ProgressBar>(Resource.Id.progressbar1);
+            progressBar.Visibility = ViewStates.Visible;
+
             FlighSearchModel.Instance.GetFlightDetails(1, 0, 0, "ECONOMY", departDate, "BKK", 0, returnDate, "HKG", "en-US", "USD");
             StartActivity(typeof(FlightListActivity));
         }
