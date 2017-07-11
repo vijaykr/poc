@@ -25,7 +25,7 @@ namespace ThaiAirways.iOS.View
         public void initCell(FlightSearchEntity flightSearchEntity)
         {
             FlightNumberLabel.Text = flightSearchEntity.OperatingAirline + " " + flightSearchEntity.EquipmentType;
-            AirlineLabel.Text = "|  " + CrossPlatformUtils.GetAirlineNameByCode(flightSearchEntity.MarketingAirline);
+            AirlineLabel.Text = "|  Operated by " + CrossPlatformUtils.GetAirlineNameByCode(flightSearchEntity.MarketingAirline);
             FromLabel.Text = flightSearchEntity.DepartTime + " " + flightSearchEntity.DestCode;
 			ToLabel.Text = flightSearchEntity.ArrCode + " " + flightSearchEntity.ArrTime;
             DurationLabel.Text = CrossPlatformUtils.GetDurationFormat(flightSearchEntity.Duration);

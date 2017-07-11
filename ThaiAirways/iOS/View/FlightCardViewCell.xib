@@ -41,19 +41,19 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="21" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
-                        <rect key="frame" x="269" y="81" width="69" height="21"/>
+                        <rect key="frame" x="263" y="81" width="75" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                         <color key="textColor" colorSpace="calibratedRGB" red="0.75294117647058822" green="0" blue="0.53333333333333333" alpha="1"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="22" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
-                        <rect key="frame" x="269" y="125" width="69" height="21"/>
+                        <rect key="frame" x="263" y="125" width="75" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                         <color key="textColor" colorSpace="calibratedRGB" red="0.75294117647058822" green="0" blue="0.53333333333333333" alpha="1"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="23" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
-                        <rect key="frame" x="270" y="169" width="69" height="21"/>
+                        <rect key="frame" x="263" y="169" width="76" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                         <color key="textColor" colorSpace="calibratedRGB" red="0.75294117647058822" green="0" blue="0.53333333333333333" alpha="1"/>
                         <nil key="highlightedColor"/>
@@ -65,21 +65,21 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THB" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="59" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
-                        <rect key="frame" x="240" y="81" width="42" height="21"/>
+                        <rect key="frame" x="240" y="81" width="30" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <color key="textColor" colorSpace="calibratedRGB" red="0.75294117647058822" green="0" blue="0.53333333333333333" alpha="1"/>
                         <nil key="highlightedColor"/>
                         <color key="backgroundColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THB" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="60" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
-                        <rect key="frame" x="240" y="126" width="42" height="21"/>
+                        <rect key="frame" x="240" y="126" width="30" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <color key="textColor" colorSpace="calibratedRGB" red="0.75294117647058822" green="0" blue="0.53333333333333333" alpha="1"/>
                         <nil key="highlightedColor"/>
                         <color key="backgroundColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THB" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="61" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
-                        <rect key="frame" x="240" y="169" width="42" height="21"/>
+                        <rect key="frame" x="240" y="169" width="30" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <color key="textColor" colorSpace="calibratedRGB" red="0.75294117647058822" green="0" blue="0.53333333333333333" alpha="1"/>
                         <nil key="highlightedColor"/>
