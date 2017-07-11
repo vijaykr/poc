@@ -111,6 +111,7 @@
     <Compile Include="FlightRecyclerAdapter.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SplashActivity.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -122,6 +123,8 @@
     <AndroidResource Include="Resources\layout\FlightLanding.axml" />
     <AndroidResource Include="Resources\layout\FlightList.axml" />
     <None Include="ThaiAirways.Droid.csproj.bak" />
+    <AndroidResource Include="Resources\layout\Splash.axml" />
+    <AndroidResource Include="Resources\drawable\landing.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\values\Strings.xml" />
