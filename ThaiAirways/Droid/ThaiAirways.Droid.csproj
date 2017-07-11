@@ -120,10 +120,10 @@
     <None Include="Properties\AndroidManifest.xml" />
     <None Include="Assets\AboutAssets.txt" />
     <AndroidResource Include="Resources\layout\FlightRow.axml" />
-    <AndroidResource Include="Resources\layout\FlightBooking.axml" />     
+    <AndroidResource Include="Resources\layout\FlightBooking.axml" />
     <AndroidResource Include="Resources\layout\FlightLanding.axml" />
-    <AndroidResource Include="Resources\layout\FlightList.axml" />      
-    <AndroidResource Include="Resources\layout\TALanding.axml" />      
+    <AndroidResource Include="Resources\layout\FlightList.axml" />
+    <AndroidResource Include="Resources\layout\TALanding.axml" />
     <None Include="ThaiAirways.Droid.csproj.bak" />
     <AndroidResource Include="Resources\layout\Splash.axml" />
     <AndroidResource Include="Resources\drawable\landing.png" />
@@ -214,6 +214,12 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\mipmap-hdpi\landing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\mipmap-mdpi\landing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\mipmap-mdpi\oneway_line.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
