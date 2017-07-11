@@ -33,7 +33,6 @@ namespace ThaiAirways.iOS
 			
             FlightListTableView.Source = new FlightListTableViewSource(FlighSearchModel.Instance.FlightList);
             FlightListTableView.ReloadData();
-
 		}
 
 		public override void ViewWillAppear(bool animated)
@@ -41,8 +40,6 @@ namespace ThaiAirways.iOS
 			base.ViewWillAppear(animated);
 
 			NavigationController.NavigationBar.Hidden = true;
-
-            TotalFlightLabel.Text = FlighSearchModel.Instance.FlightList.Count + " Flights";
 
             DepartDateLabel.Text = CrossPlatformUtils.GetDateInDayDateMonth(departDate);
             ReturnDateLabel.Text = CrossPlatformUtils.GetDateInDayDateMonth(returnDate);

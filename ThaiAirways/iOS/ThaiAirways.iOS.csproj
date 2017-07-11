@@ -492,6 +492,10 @@
     <ImageAsset Include="Assets.xcassets\one_way.imageset\one_way.png" />
     <ImageAsset Include="Assets.xcassets\one_way.imageset\one_way%402x.png" />
     <ImageAsset Include="Assets.xcassets\one_way.imageset\one_way%403x.png" />
+    <ImageAsset Include="Assets.xcassets\family_fare.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\family_fare.imageset\family_fare.png" />
+    <ImageAsset Include="Assets.xcassets\family_fare.imageset\family_fare%402x.png" />
+    <ImageAsset Include="Assets.xcassets\family_fare.imageset\family_fare%403x.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
@@ -524,6 +528,7 @@
     <Folder Include="Assets.xcassets\filter.imageset\" />
     <Folder Include="Assets.xcassets\flight_card.imageset\" />
     <Folder Include="Assets.xcassets\one_way.imageset\" />
+    <Folder Include="Assets.xcassets\family_fare.imageset\" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
@@ -568,6 +573,10 @@
     <Compile Include="View\FlgihtHeaderViewCell.cs" />
     <Compile Include="View\FlgihtHeaderViewCell.designer.cs">
       <DependentUpon>FlgihtHeaderViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FlightNumber.cs" />
+    <Compile Include="FlightNumber.designer.cs">
+      <DependentUpon>FlightNumber.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
