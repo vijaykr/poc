@@ -40,8 +40,8 @@ namespace ThaiAirways.Droid
             currentdateview.Text = currentDate;
 
             ImageButton imagebuttonview = FindViewById<ImageButton>(Resource.Id.imageButton1);
+            imagebuttonview.SetColorFilter(Color.Argb(255, 51, 0, 102));
             imagebuttonview.Click += delegate {
-                imagebuttonview.SetColorFilter(Color.Argb(255, 51, 0, 102));
                 StartActivity(typeof(FlightBookingActivity));
             };
 
