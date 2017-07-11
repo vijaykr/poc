@@ -19,5 +19,11 @@ namespace ThaiAirways.iOS.View
         {
             // Note: this .ctor should not contain any initialization logic.
         }
-    }
+
+        public void initCell(int numberOfFlight)
+		{
+            FlightNumberLabel.Text = numberOfFlight + " Flights";
+		}
+
+	}
 }

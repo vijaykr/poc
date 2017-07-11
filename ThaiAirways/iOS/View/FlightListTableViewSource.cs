@@ -53,6 +53,7 @@ namespace ThaiAirways.iOS.View
             if(indexPath.Row == 0)
             {
 				FlgihtHeaderViewCell headerCell = tableView.DequeueReusableCell("FlgihtHeaderViewCell", indexPath) as FlgihtHeaderViewCell;
+                headerCell.initCell(flightList.Count);
                 return headerCell;
 			}
 
@@ -65,7 +66,7 @@ namespace ThaiAirways.iOS.View
         {
             if(indexPath.Row == 0)
             {
-                return 150;    
+                return 180;    
             }
 
             return 208;
