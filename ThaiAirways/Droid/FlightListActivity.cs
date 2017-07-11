@@ -26,6 +26,7 @@ namespace ThaiAirways.Droid
         DateTime returnDate;
         protected override void OnResume()
         {
+
             base.OnResume();
             
             List<FlightSearchEntity> flightsData = new List<FlightSearchEntity>();
