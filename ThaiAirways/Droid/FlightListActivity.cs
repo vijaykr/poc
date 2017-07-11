@@ -59,7 +59,7 @@ namespace ThaiAirways.Droid
             else
             {
                // FindViewById<TextView>(Resource.Id.txtNumberOfFlights).Text = "";
-                FindViewById<TextView>(Resource.Id.textView10).Text = "No flight found";
+               // FindViewById<TextView>(Resource.Id.textView10).Text = "No flight found";
             }           
         }
 

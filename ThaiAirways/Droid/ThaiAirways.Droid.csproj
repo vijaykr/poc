@@ -127,6 +127,7 @@
     <AndroidResource Include="Resources\layout\FlightLanding.axml" />
     <AndroidResource Include="Resources\layout\FlightList.axml" />
     <AndroidResource Include="Resources\layout\TALanding.axml" />
+    <AndroidResource Include="Resources\layout\FlightListFirstItem.axml" />
     <None Include="ThaiAirways.Droid.csproj.bak" />
     <AndroidResource Include="Resources\layout\Splash.axml" />
     <AndroidResource Include="Resources\drawable\landing.png" />
