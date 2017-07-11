@@ -155,8 +155,7 @@
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
         android:layout_alignParentBottom="true"
-        android:orientation="vertical"
-        android:background="#979797">
+        android:orientation="vertical">
         <ImageView
             android:src="@mipmap/nav_line"
             android:layout_width="match_parent"
@@ -167,36 +166,35 @@
             android:layout_width="match_parent"
             android:orientation="horizontal"
             android:paddingTop="10dp"
-            android:paddingBottom="10dp"
-            android:background="@color/colorwhite">
+            android:paddingBottom="10dp" android:background="@color/white">
             <ImageButton
                 android:src="@mipmap/book_flight"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/imageButton1"
                 android:layout_weight="1"
-                android:background="@color/colorwhite" />
+                android:background="@color/white"/>
             <ImageButton
                 android:src="@mipmap/timetable"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/imageButton2"
                 android:layout_weight="1"
-                android:background="@color/colorwhite" />
+                android:background="@color/white" />
             <ImageButton
                 android:src="@mipmap/flight_status"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/imageButton3"
                 android:layout_weight="1"
-                android:background="@color/colorwhite" />
+                android:background="@color/white" />
             <ImageButton
                 android:src="@mipmap/my_booking"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/imageButton4"
                 android:layout_weight="1"
-                android:background="@color/colorwhite" />
+                android:background="@color/white" />
         </LinearLayout>
     </LinearLayout>
 </RelativeLayout>
