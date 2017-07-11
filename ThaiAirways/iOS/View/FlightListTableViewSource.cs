@@ -10,7 +10,6 @@ namespace ThaiAirways.iOS.View
 
 		private List<FlightSearchEntity> flightList;
 		int itemSection = 1;
-		int itemCount = 3;
 
 		public static readonly int ViewHeight = 350;
 
@@ -58,7 +57,7 @@ namespace ThaiAirways.iOS.View
 			}
 
 			FlightCardViewCell detailsCell = tableView.DequeueReusableCell("FlightCardViewCell", indexPath) as FlightCardViewCell;
-			detailsCell.initCell(flightList.ToArray()[indexPath.Row]);
+			detailsCell.initCell(flightList.ToArray()[indexPath.Row - 1]);
 			return detailsCell;
 		}
 
