@@ -58,7 +58,7 @@ namespace ThaiAirways.iOS.View
 			}
 
 			FlightCardViewCell detailsCell = tableView.DequeueReusableCell("FlightCardViewCell", indexPath) as FlightCardViewCell;
-			detailsCell.initCell(flightList.ToArray()[indexPath.Row]);
+			detailsCell.initCell(flightList.ToArray()[indexPath.Row - 1]);
 			return detailsCell;
 		}
 
