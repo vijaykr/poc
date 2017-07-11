@@ -15,7 +15,8 @@ using System.Threading.Tasks;
 
 namespace ThaiAirways.Droid
 {
-    [Activity(Theme = "@style/MyCustomTheme", MainLauncher = false, Icon = "@drawable/icon")]
+   
+    [Activity(Theme = "@style/MyCustomTheme", MainLauncher = false, Icon = "@drawable/icon", ScreenOrientation = Android.Content.PM.ScreenOrientation.Portrait)]
     public class FlightListActivity : Activity
     {
         RecyclerView mRecyclerView;
@@ -34,7 +35,8 @@ namespace ThaiAirways.Droid
                         
             if (flightsData != null)
             {
-                FindViewById<TextView>(Resource.Id.txtNumberOfFlights).Text = flightsData.Count.ToString();
+               // FindViewById<TextView>(Resource.Id.txtNumberOfFlights).Text = flightsData.Count.ToString();
+
 
                 FindViewById<TextView>(Resource.Id.txtOriginToDestPlaceTop).Text = "Bangkok to Hong Kong";
                 FindViewById<TextView>(Resource.Id.txtDepDateTop).Text = CrossPlatformUtils.GetDateInDayDateMonth(departDate);
@@ -51,11 +53,12 @@ namespace ThaiAirways.Droid
 
                 // Plug in my adapter:
                 mAdapter = new FlightRecyclerAdapter(flightsData);
+              
                 mRecyclerView.SetAdapter(mAdapter);
             }
             else
             {
-                FindViewById<TextView>(Resource.Id.txtNumberOfFlights).Text = "";
+               // FindViewById<TextView>(Resource.Id.txtNumberOfFlights).Text = "";
                 FindViewById<TextView>(Resource.Id.textView10).Text = "No flight found";
             }           
         }

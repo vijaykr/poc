@@ -19,17 +19,29 @@ namespace ThaiAirways.Droid
     class FlightRecyclerAdapter : RecyclerView.Adapter
     {
         public List<FlightSearchEntity> flights;
+
         public FlightRecyclerAdapter(List<FlightSearchEntity> flightsList)
         {
-            flights = flightsList;
+            flights = flightsList;            
         }
 
         public override RecyclerView.ViewHolder
             OnCreateViewHolder(ViewGroup parent, int viewType)
         {
-            View itemView = LayoutInflater.From(parent.Context).
+            View itemView=null;
+            FlightViewHolder vh=null;
+            if (viewType == 0) { 
+             itemView = LayoutInflater.From(parent.Context).
+                        Inflate(Resource.Layout.FlightListFirstItem, parent, false);          
+              vh = new FlightViewHolder(itemView);
+            }
+            else
+            {
+                itemView = LayoutInflater.From(parent.Context).
                         Inflate(Resource.Layout.FlightRow, parent, false);
-            FlightViewHolder vh = new FlightViewHolder(itemView);
+                vh = new FlightViewHolder(itemView);
+            }
+
             return vh;
         }
 
@@ -37,6 +49,11 @@ namespace ThaiAirways.Droid
             OnBindViewHolder(RecyclerView.ViewHolder holder, int position)
         {
             FlightViewHolder vh = holder as FlightViewHolder;
+           
+
+            if (position == 0)
+                vh.NumberOfFlights.Text = flights.Count.ToString();
+
             vh.FlightNumber.Text = flights[position].MarketingAirline + " " + flights[position].EquipmentType;
 
             vh.OperatedBy.Text = "Operated by " + CrossPlatformUtils.GetAirlineNameByCode(flights[position].OperatingAirline);
@@ -70,6 +87,11 @@ namespace ThaiAirways.Droid
         {
             get { return flights.Count; }
         }
+
+        public override int GetItemViewType(int position)
+        {
+            return (position == 0) ? 0 : 1;
+        }
     }
     public class FlightViewHolder : RecyclerView.ViewHolder
     {
@@ -89,10 +111,12 @@ namespace ThaiAirways.Droid
         public TextView Amount1 { get; private set; }
         public TextView Amount2 { get; private set; }
         public TextView Amount3 { get; private set; }
-
+        public TextView NumberOfFlights { get; private set; }
+        //  public LinearLayout FirstElement { get; private set; }
         public FlightViewHolder(View itemView) : base(itemView)
         {
-            // Locate and cache view references:
+            // Locate and cache view references:  
+            NumberOfFlights = itemView.FindViewById<TextView>(Resource.Id.txtNumberOfFlights);
             FlightNumber = itemView.FindViewById<TextView>(Resource.Id.txtFlightNumber);
             OperatedBy = itemView.FindViewById<TextView>(Resource.Id.txtOperatedBy);
             DepartureTime = itemView.FindViewById<TextView>(Resource.Id.txtDepartureTime);
