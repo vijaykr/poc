@@ -12,14 +12,14 @@
         android:layout_height="72dp"
         android:id="@+id/relativeLayout1"
         android:background="@mipmap/thai_pattern_bg">
-      <ImageView
-          android:layout_width="35dp"
-          android:layout_height="40dp"
-          android:src="@mipmap/fill"
-          android:id="@+id/imageView1"
-          android:paddingTop="20dp"
-          android:paddingLeft="20dp"
-          android:maxWidth="20dp" />
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/fill"
+            android:id="@+id/imageView1"
+            android:paddingTop="20dp"
+            android:paddingLeft="20dp"
+            android:maxWidth="20dp" />
         <TextView
             android:text="Book a trip"
             android:layout_width="match_parent"
@@ -44,35 +44,37 @@
             android:textSize="18sp" />
         <TextView
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text=""
+            android:layout_height="match_parent"
+            android:text="One Way"
             android:layout_weight="1"
             android:gravity="center"
-            android:textColor="#330066"
+            android:textColor="#CC0099"
             android:textSize="18sp" />
     </LinearLayout>
-    <RelativeLayout
-		android:layout_marginTop="5dp"
-        android:minWidth="25px"
-        android:minHeight="25px"
-        android:layout_width="match_parent"
+    <LinearLayout
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/relativeLayoutln">
+        android:layout_marginTop="5dp">
         <ImageView
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:src="@mipmap/line"
             android:id="@+id/imageView2"
+            android:layout_weight="1"
             android:layout_marginLeft="20dp"
-            android:paddingRight="40dp" />
+            android:paddingRight="20dp"
+            android:layout_gravity="center" />
         <ImageView
             android:layout_width="200dp"
             android:layout_height="wrap_content"
-            android:src="@mipmap/line"
-            android:layout_marginLeft="350dp"
-            android:paddingLeft="40dp"
-            android:paddingRight="40dp" />
-    </RelativeLayout>
+            android:src="@mipmap/oneway_line"
+            android:id="@+id/imageView3"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop" />
+    </LinearLayout>
     <RelativeLayout
         android:minWidth="25px"
         android:minHeight="25px"
@@ -116,7 +118,7 @@
             android:text="BKK"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1" 
+            android:layout_weight="1"
             android:layout_marginLeft="10dp"
             android:gravity="center"
             android:textColor="#4A4A4A"
@@ -135,9 +137,8 @@
             android:layout_weight="1"
             android:gravity="center"
             android:textColor="#4A4A4A"
-            android:textSize="56sp" 
-		    android:layout_marginRight="10dp"/>
-      
+            android:textSize="56sp"
+            android:layout_marginRight="10dp" />
     </LinearLayout>
     <LinearLayout
         android:layout_width="fill_parent"
@@ -503,14 +504,14 @@
             android:paddingTop="10dp"
             android:maxWidth="20dp" />
     </RelativeLayout>
-	
     <RelativeLayout
         android:minWidth="25px"
         android:minHeight="25px"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingLeft="20dp"
-        android:paddingRight="20dp" android:layout_marginTop="10dp">
+        android:paddingRight="20dp"
+        android:layout_marginTop="10dp">
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
@@ -534,7 +535,8 @@
             android:layout_height="wrap_content"
             android:textColor="#FFFFFF"
             android:textSize="16sp"
-            android:background="#CC0099" />
+            android:background="#CC0099"
+            android:paddingBottom="10dp" />
     </RelativeLayout>
     <RelativeLayout
         android:minWidth="25px"

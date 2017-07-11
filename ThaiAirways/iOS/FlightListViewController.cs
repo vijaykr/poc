@@ -28,9 +28,9 @@ namespace ThaiAirways.iOS
 
 			BackButton.TouchUpInside += BackButton_TouchUpInside;
 
-
-            FlightListTableView.RegisterNibForCellReuse(FlightCardViewCell.Nib, "FlightCardViewCell");
-
+			FlightListTableView.RegisterNibForCellReuse(FlgihtHeaderViewCell.Nib, "FlgihtHeaderViewCell");
+			FlightListTableView.RegisterNibForCellReuse(FlightCardViewCell.Nib, "FlightCardViewCell");
+			
             FlightListTableView.Source = new FlightListTableViewSource(FlighSearchModel.Instance.FlightList);
             FlightListTableView.ReloadData();
 

@@ -51,8 +51,8 @@ namespace ThaiAirways.Droid
             vh.ArrivalTime.Text = CrossPlatformUtils.GetTimeFromDate(flights[position].ArrDate);
             vh.ArrivalPlace.Text = flights[position].ArrCode.ToUpper();
 
-            vh.Amount1.Text = flights[position].FareInfo[0].Amount;
-            vh.Class1.Text = flights[position].FareInfo[0].ClassType;
+            vh.Amount1.Text = CrossPlatformUtils.GetCurencyInString(flights[position].FareInfo[0].Amount);
+           // vh.Class1.Text = flights[position].FareInfo[0].ClassType;
             vh.CurrencyCode1.Text = flights[position].FareInfo[0].Currency;
 
             /*
