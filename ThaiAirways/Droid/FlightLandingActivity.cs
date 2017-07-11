@@ -14,10 +14,11 @@ using Square.Picasso;
 using Android.Support.Design.Internal;
 using Android.Util;
 using Android.Graphics;
+using Android.Content.PM;
 
 namespace ThaiAirways.Droid
 {
-    [Activity(Label = "ThaiAirways", MainLauncher = true, Icon = "@drawable/icon", Theme = "@style/Theme.AppCompat.Light.NoActionBar")]
+    [Activity(Label = "ThaiAirways", MainLauncher = true, Icon = "@drawable/icon", Theme = "@style/Theme.AppCompat.Light.NoActionBar", ScreenOrientation = ScreenOrientation.Portrait)]
     public class FlightLandingActivity : AppCompatActivity
     {
         String currentDate;
@@ -40,8 +41,8 @@ namespace ThaiAirways.Droid
             currentdateview.Text = currentDate;
 
             ImageButton imagebuttonview = FindViewById<ImageButton>(Resource.Id.imageButton1);
-            imagebuttonview.SetColorFilter(Color.Argb(255, 51, 0, 102));
             imagebuttonview.Click += delegate {
+                imagebuttonview.SetColorFilter(Color.Argb(255, 51, 0, 102));
                 StartActivity(typeof(FlightBookingActivity));
             };
 

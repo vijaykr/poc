@@ -17,13 +17,9 @@
             android:scaleType="centerCrop"
             android:id="@+id/imageView1" />
         <RelativeLayout
-            android:layout_height="290dp"
+            android:background="@mipmap/mid_nav"
+            android:layout_height="300dp"
             android:layout_width="match_parent">
-            <ImageView
-                android:src="@mipmap/mid_nav"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:scaleType="fitXY" />
             <TextView
                 android:text="Welcome Mr Chinsupakul"
                 android:textAppearance="?android:attr/textAppearanceMedium"
@@ -32,18 +28,16 @@
                 android:id="@+id/textView5"
                 android:textSize="24sp"
                 android:textColor="@color/colorwhite"
-                android:layout_marginTop="140dp"
-                android:layout_marginLeft="10dp" />
+                android:paddingTop="150dp"
+                android:paddingLeft="20dp" />
             <LinearLayout
                 android:orientation="horizontal"
-                android:minWidth="25px"
-                android:minHeight="25px"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/linearLayout2"
-                android:layout_marginTop="165dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="100dp">
+                android:paddingTop="175dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="80dp">
                 <TextView
                     android:text="BKK"
                     android:textAppearance="?android:attr/textAppearanceMedium"
@@ -78,14 +72,14 @@
                 android:id="@+id/textView8"
                 android:textSize="14sp"
                 android:textColor="@color/colorwhite"
-                android:layout_marginTop="45dp"
-                android:layout_marginLeft="12dp"
-                android:layout_alignTop="@id/linearLayout2" />
+                android:paddingTop="220dp"
+                android:paddingLeft="20dp" />
         </RelativeLayout>
         <LinearLayout
             android:orientation="horizontal"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
             android:layout_width="match_parent"
             android:layout_height="180dp"
             android:id="@+id/linearLayout3">
@@ -97,13 +91,13 @@
                 <ImageView
                     android:layout_width="170dp"
                     android:src="@mipmap/promotion"
-                    android:layout_height="70dp"
+                    android:layout_height="80dp"
                     android:id="@+id/promotion1_image_view"
                     android:layout_weight="1"
                     android:scaleType="fitStart" />
                 <TextView
                     android:text="Promotions"
-                    android:layout_marginTop="2dp"
+                    android:layout_marginTop="5dp"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -129,13 +123,13 @@
                 <ImageView
                     android:layout_width="170dp"
                     android:src="@mipmap/travel_extra"
-                    android:layout_height="70dp"
+                    android:layout_height="80dp"
                     android:id="@+id/promotion2_image_view"
                     android:layout_weight="1"
                     android:scaleType="fitStart" />
                 <TextView
                     android:text="Travel Extras"
-                    android:layout_marginTop="2dp"
+                    android:layout_marginTop="5dp"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

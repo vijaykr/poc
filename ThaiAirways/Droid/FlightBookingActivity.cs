@@ -11,11 +11,12 @@ using Android.Views;
 using Android.Widget;
 using ThaiAirways.Model;
 using ThaiAirways.Utils;
+using Android.Content.PM;
 
 namespace ThaiAirways.Droid
 {
 
-    [Activity(Theme = "@android:style/Theme.Material.Light", Label = "BookFlight", MainLauncher = false)]
+    [Activity(Theme = "@android:style/Theme.Material.Light", Label = "BookFlight", MainLauncher = false, ScreenOrientation = ScreenOrientation.Portrait)]
     public class FlightBookingActivity : Activity
     {
         DateTime departDate;

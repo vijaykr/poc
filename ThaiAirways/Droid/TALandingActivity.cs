@@ -9,10 +9,11 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using Android.Content.PM;
 
 namespace ThaiAirways.Droid
 {
-    [Activity(Theme = "@android:style/Theme.Material.Light", Label = "BookFlight", MainLauncher = false)]
+    [Activity(Theme = "@android:style/Theme.Material.Light", Label = "BookFlight", MainLauncher = false, ScreenOrientation = ScreenOrientation.Portrait)]
     public class TALandingActivity : Activity
     {
         protected override void OnCreate(Bundle savedInstanceState)
