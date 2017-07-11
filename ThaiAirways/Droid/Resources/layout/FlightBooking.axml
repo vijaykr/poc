@@ -518,7 +518,7 @@
             android:background="@android:color/black" />
         <Space
             android:layout_width="1dp"
-            android:layout_height="30dp" />
+            android:layout_height="10dp" />
     </RelativeLayout>
     <RelativeLayout
         android:minWidth="25px"
