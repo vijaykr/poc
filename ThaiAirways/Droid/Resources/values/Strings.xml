@@ -12,5 +12,8 @@
   <string name="NumberOfFlights">3</string>
   <string name="AfterNumberOfFlights">Flights</string>
   <string name="FamilyFareBenefits"><u>Learn Fare Family Benefits</u></string>
-  
+  <string name="BookFlight">Book flight</string>
+  <string name="Timetable">Timetable</string>
+  <string name="FlightStatus">Flight status</string>
+  <string name="MyBooking">My booking</string>
 </resources>

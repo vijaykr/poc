@@ -112,6 +112,7 @@ namespace ThaiAirways.Droid
 
             for (int i = 0; i < menuView.ChildCount; i++)
             {
+
                 BottomNavigationItemView item = (BottomNavigationItemView)menuView.GetChildAt(i);
                 item.SetShiftingMode(false);
 
@@ -123,23 +124,27 @@ namespace ThaiAirways.Droid
                 var prm = icon.LayoutParameters;
                 var dsm = Resources.DisplayMetrics;
 
-                prm.Height = (int)TypedValue.ApplyDimension(ComplexUnitType.Dip, 40, dsm);
-                prm.Width = (int)TypedValue.ApplyDimension(ComplexUnitType.Dip, 40, dsm);
+                prm.Height = (int)TypedValue.ApplyDimension(ComplexUnitType.Dip, 50, dsm);
+                prm.Width = (int)TypedValue.ApplyDimension(ComplexUnitType.Dip, 50, dsm);
 
                 icon.LayoutParameters = prm;
-                ////Implement Accessibility
-                //if (i == 0)
-                //{
-                //	icon.ContentDescription = GetString(Resource.String.);
-                //}
-                //if (i == 1)
-                //{
-                //	icon.ContentDescription = GetString(Resource.String.saving);
-                //}
-                //if (i == 2)
-                //{
-                //	icon.ContentDescription = GetString(Resource.String.profile);
-                //}
+                //Implement Accessibility
+                if (i == 0)
+                {
+                    icon.ContentDescription = GetString(Resource.String.BookFlight);
+                }
+                if (i == 1)
+                {
+                    icon.ContentDescription = GetString(Resource.String.Timetable);
+                }
+                if (i == 2)
+                {
+                    icon.ContentDescription = GetString(Resource.String.FlightStatus);
+                }
+                if (i == 3)
+                {
+                    icon.ContentDescription = GetString(Resource.String.MyBooking);
+                }
             }
         }
     }
