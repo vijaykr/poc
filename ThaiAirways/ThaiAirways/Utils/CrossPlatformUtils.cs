@@ -7,13 +7,13 @@ namespace ThaiAirways.Utils
     {
 		public static DateTime GetDeaprtDate()
 		{
-            var date = DateTime.Now.AddDays(1);
+            var date = DateTime.Now.AddDays(7);
 			return date;
 		}
 
 		public static DateTime GetReturnDate()
 		{
-			var date = DateTime.Now.AddDays(5);
+			var date = DateTime.Now.AddDays(10);
 			return date;
 		}
 
